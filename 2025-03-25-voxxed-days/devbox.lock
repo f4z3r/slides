@@ -1,0 +1,120 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "resolved": "github:NixOS/nixpkgs/de0fe301211c267807afd11b12613f5511ff7433?lastModified=1741310760&narHash=sha256-aizILFrPgq%2FW53Jw8i0a1h1GZAAKtlYOrG%2FA5r46gVM%3D"
+    },
+    "presenterm@0.10.1": {
+      "last_modified": "2025-02-16T00:50:12Z",
+      "resolved": "github:NixOS/nixpkgs/1dcdd535fef84d4671129a10e7072d56dca9a4d3#presenterm",
+      "source": "devbox-search",
+      "version": "0.10.1",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/9yykyglqdk2mpa224igs4fcm9d6xrsm7-presenterm-0.10.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/9yykyglqdk2mpa224igs4fcm9d6xrsm7-presenterm-0.10.1"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/lg3dsvnic95bs66xw07pcwmbpz4m0yfd-presenterm-0.10.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/lg3dsvnic95bs66xw07pcwmbpz4m0yfd-presenterm-0.10.1"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/fj1sdlgiws6ska6krc7n17lj77rp68wn-presenterm-0.10.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/fj1sdlgiws6ska6krc7n17lj77rp68wn-presenterm-0.10.1"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/zih83ws7qkzcjwxqzqj2jk6mjiwi71nw-presenterm-0.10.1",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/zih83ws7qkzcjwxqzqj2jk6mjiwi71nw-presenterm-0.10.1"
+        }
+      }
+    },
+    "python312Packages.presenterm-export@0.2.7": {
+      "last_modified": "2025-02-27T15:48:43Z",
+      "resolved": "github:NixOS/nixpkgs/6c5c5f5100281f8f4ff23f13edd17d645178c87c#python312Packages.presenterm-export",
+      "source": "devbox-search",
+      "version": "0.2.7",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/73wq6gkfcd6f4wrc6psga8vj2l779w8v-python3.12-presenterm-export-0.2.7",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/wsxpv8ijix4y25mh6b8vakbqf37np041-python3.12-presenterm-export-0.2.7-dist"
+            }
+          ],
+          "store_path": "/nix/store/73wq6gkfcd6f4wrc6psga8vj2l779w8v-python3.12-presenterm-export-0.2.7"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/pwqnbycak47l5qrppq7yvgr56bzkn1ic-python3.12-presenterm-export-0.2.7",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/jb4jmkiyxca402lsqdgg0f464fbzyadv-python3.12-presenterm-export-0.2.7-dist"
+            }
+          ],
+          "store_path": "/nix/store/pwqnbycak47l5qrppq7yvgr56bzkn1ic-python3.12-presenterm-export-0.2.7"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/2f58w7k68k1yzv2lg3iy732qsm31h9n5-python3.12-presenterm-export-0.2.7",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/pfb2mwr1cy3yqpinz371273xhcw6pgjy-python3.12-presenterm-export-0.2.7-dist"
+            }
+          ],
+          "store_path": "/nix/store/2f58w7k68k1yzv2lg3iy732qsm31h9n5-python3.12-presenterm-export-0.2.7"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/7h6410nc4h4vl8gh2pv9595h48xrhx9d-python3.12-presenterm-export-0.2.7",
+              "default": true
+            },
+            {
+              "name": "dist",
+              "path": "/nix/store/d336jbn9insjx1q39g1p2j96mz9gipjs-python3.12-presenterm-export-0.2.7-dist"
+            }
+          ],
+          "store_path": "/nix/store/7h6410nc4h4vl8gh2pv9595h48xrhx9d-python3.12-presenterm-export-0.2.7"
+        }
+      }
+    }
+  }
+}

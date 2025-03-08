@@ -1,0 +1,102 @@
+default:
+  margin:
+    percent: 8
+  colors:
+    foreground: "d4be98"
+    background: "282828"
+
+slide_title:
+  alignment: center
+  padding_bottom: 1
+  padding_top: 1
+  colors:
+    foreground: "7daea3"
+  bold: true
+
+code:
+  alignment: center
+  minimum_size: 50
+  minimum_margin:
+    percent: 8
+  theme_name: base16-eighties.dark
+  padding:
+    horizontal: 2
+    vertical: 1
+
+execution_output:
+  colors:
+    foreground: "ddc7a1"
+    background: "45403d"
+  status:
+    running:
+      foreground: "7daea3"
+    success:
+      foreground: "a9b665"
+    failure:
+      foreground: "ea6962"
+
+inline_code:
+  colors:
+    foreground: "d3869b"
+    background: "45403d"
+
+intro_slide:
+  title:
+    alignment: center
+    colors:
+      foreground: "7daea3"
+  subtitle:
+    alignment: center
+    colors:
+      foreground: "89b482"
+  author:
+    alignment: center
+    colors:
+      foreground: "a89984"
+    positioning: page_bottom
+
+headings:
+  h1:
+    prefix: "██"
+    colors:
+      foreground: "ea6962"
+  h2:
+    prefix: "▓▓▓"
+    colors:
+      foreground: "e78a4e"
+  h3:
+    prefix: "▒▒▒▒"
+    colors:
+      foreground: "d8a657"
+  h4:
+    prefix: "░░░░░"
+    colors:
+      foreground: "a9b665"
+  h5:
+    prefix: "░░░░░░"
+    colors:
+      foreground: "7daea3"
+  h6:
+    prefix: "░░░░░░░"
+    colors:
+      foreground: "d3869b"
+
+block_quote:
+  prefix: "▍ "
+  colors:
+    foreground: "d4be98"
+    background: "0d3138"
+    prefix: "7daea3"
+
+# todo update theme
+typst:
+  colors:
+    foreground: "f0f0f0"
+    background: "292e42"
+
+footer:
+  style: empty
+
+modals:
+  selection_colors:
+    foreground: "4f422e"
