@@ -16,14 +16,22 @@ Nix Trinity
 speaker_note: |
   2 MINUTES
 
-  Extend to 4 minutes with intro story?
+  XXX: Extend to 4 minutes with intro story?
 
   Nix Lang:
-  - ...
+  - functional
+  - focused on building software
+  - terrible documentation
+  - terrible error messages
+
   Nix Pkgs:
-  - ...
+  - registry of build definitions
+  - simple github repository
+
   NixOS:
-  - ...
+  - definition of a system
+  - based on expressions of the nix language
+  - using packages from nixpkgs
 -->
 
 Nix Language
@@ -48,12 +56,44 @@ in
 <!--
 speaker_note: |
   1 MINUTES (3)
+
+  - simple primitive types
+  - everything is an expression
+  - nothing too fancy
 -->
 
 Nix Language
 ===
 
 # Derivations
+
+<!-- column_layout: [3, 5] -->
+
+<!-- column: 0 -->
+<!-- newlines: 1 -->
+
+## Context
+
+- Definition of a package
+- Fully reproducible
+
+<!-- newlines: 1 -->
+
+## Content
+
+- A single closure
+- Source code
+- Build dependencies
+- Runtime dependencies
+
+<!-- newlines: 1 -->
+
+## Support
+
+- Using library functions for better abstractions
+- Most standard builders are supported
+
+<!-- column: 1 -->
 
 ```nix {1-17|1|2-3|5-10|9|12-14} +line_numbers
 rustPlatform.buildRustPackage rec {
@@ -75,9 +115,15 @@ rustPlatform.buildRustPackage rec {
 }
 ```
 
+<!-- reset_layout -->
+
 <!--
 speaker_note: |
   2 MINUTES (5)
+
+  - rust based example
+  - takes inputs and produces single output
+  - every input hashed
 -->
 
 Nix Package Manager
@@ -97,6 +143,9 @@ Nix Package Manager
 <!--
 speaker_note: |
   1 MINUTES (6)
+
+  - presents output of a derivation
+  - also hashed
 -->
 
 Demo
@@ -115,8 +164,9 @@ speaker_note: |
 
   nix repl
 
-  :l <nixpkgs>
   <nixpkgs> # compare with channels/registry
+  python3
+  :l <nixpkgs>
   python3
   python3.withPackages # function
   python3.withPackages (p: [p.numpy])
@@ -129,7 +179,7 @@ speaker_note: |
 NixOS
 ===
 
-![nixos](./assets/neofetch.png)
+![image:width:75%](./assets/neofetch.png)
 
 <!-- newlines: 2 -->
 
@@ -148,6 +198,10 @@ NixOS
 <!--
 speaker_note: |
   2 MINUTES (13)
+
+  - definition of a program which is your system
+  - contains packages, and their config
+  - check out my system definition
 -->
 
 Use Cases
@@ -172,6 +226,21 @@ Use Cases
 <!--
 speaker_note: |
   3 MINUTES (16)
+
+  Dev environments:
+  - everyone has the same tool versions
+  - ... and the same config
+  - Nix is hard, use devbox
+
+  CI/CD:
+  - build pipelines in Nix
+  - can run nix build everywhere
+  - no more need for specialised runners
+
+  Fleet Management:
+  - large fleets
+  - system lifecycles
+  - pushing configuration changes
 
   Questions: 1-2 MINUTES
 -->
