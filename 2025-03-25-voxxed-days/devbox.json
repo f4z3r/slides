@@ -2,7 +2,8 @@
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
   "packages": [
     "python312Packages.presenterm-export@0.2.7",
-    "presenterm@0.10.1"
+    "presenterm@0.10.1",
+    "d2@0.6.9",
   ],
   "shell": {
     "init_hook": [
@@ -10,7 +11,14 @@
     ],
     "scripts": {
       "build": [
+        "d2 assets/*.d2",
         "presenterm -e slides.md"
+      ],
+      "present": [
+        "presenterm --publish-speaker-notes slides.md"
+      ],
+      "notes": [
+        "presenterm --listen-speaker-notes slides.md"
       ]
     }
   }

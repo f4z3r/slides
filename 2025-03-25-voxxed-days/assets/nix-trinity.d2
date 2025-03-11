@@ -1,0 +1,46 @@
+vars: {
+  d2-config: {
+    layout-engine: elk
+    theme-id: 200
+    sketch: true
+  }
+}
+
+classes: {
+  block: {
+    width: 500
+    style: {
+      text-transform: uppercase
+      font-color: white
+      stroke: black
+    }
+  }
+}
+
+grid-rows: 3
+
+nixos: "NixOS" {
+  class: block
+  explaination: |md
+    A declarative operating system building on
+    top of the Nix package manager:
+
+    > Turn your OS into an executable program.
+  |
+}
+
+nixpkgs: "Nix Package Manager" {
+  class: block
+  explaination: |md
+    A declarative package manager building on the Nix language.
+  |
+}
+
+nixlang: "Nix Language" {
+  class: block
+  explaination: |md
+    A functional programming language:
+
+    > A DSL for producing reproducible builds.
+  |
+}
