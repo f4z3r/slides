@@ -1,0 +1,3 @@
+# I use NixOS btw...
+
+Presentation for Voxxed Days Zürich 2025.
