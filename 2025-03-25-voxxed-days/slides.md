@@ -14,7 +14,7 @@ Nix Trinity
 
 <!--
 speaker_note: |
-  2 MINUTES
+  3 MINUTES
 
   XXX: Extend to 4 minutes with intro story?
 
@@ -55,7 +55,7 @@ in
 
 <!--
 speaker_note: |
-  1 MINUTES (3)
+  1 MINUTES (4)
 
   - simple primitive types
   - everything is an expression
@@ -119,7 +119,7 @@ rustPlatform.buildRustPackage rec {
 
 <!--
 speaker_note: |
-  2 MINUTES (5)
+  3 MINUTES (7)
 
   - rust based example
   - takes inputs and produces single output
@@ -142,38 +142,10 @@ Nix Package Manager
 
 <!--
 speaker_note: |
-  1 MINUTES (6)
+  2 MINUTES (9)
 
   - presents output of a derivation
   - also hashed
--->
-
-Demo
-===
-
-# Nix REPL
-## Loading Package Registry
-## Exploration
-## Building Packages
-### Python with Various Dependencies
-## Running Stuff
-
-<!--
-speaker_note: |
-  5 MINUTES (11)
-
-  nix repl
-
-  <nixpkgs> # compare with channels/registry
-  python3
-  :l <nixpkgs>
-  python3
-  python3.withPackages # function
-  python3.withPackages (p: [p.numpy])
-  python3.withPackages (p: [p.jupyter])
-  :b python3.withPackages (p: [p.numpy])
-
-  Execute the binary and check imports ...
 -->
 
 NixOS
@@ -197,7 +169,7 @@ NixOS
 
 <!--
 speaker_note: |
-  2 MINUTES (13)
+  2 MINUTES (11)
 
   - definition of a program which is your system
   - contains packages, and their config
@@ -225,7 +197,7 @@ Use Cases
 
 <!--
 speaker_note: |
-  3 MINUTES (16)
+  3 MINUTES (14)
 
   Dev environments:
   - everyone has the same tool versions
@@ -241,9 +213,72 @@ speaker_note: |
   - large fleets
   - system lifecycles
   - pushing configuration changes
+-->
+
+Use Case: DevBox
+===
+
+```json {2-6,9-12} +line_numbers
+{
+  "packages": [
+    "python312Packages.presenterm-export@0.2.7",
+    "presenterm@0.10.1",
+    "d2@0.6.9"
+  ],
+  "shell": {
+    "scripts": {
+      "build": [
+        "d2 assets/*.d2",
+        "presenterm -e slides.md"
+      ],
+      "present": [
+        "presenterm --publish-speaker-notes slides.md"
+      ]
+    }
+  }
+}
+```
+
+<!--
+speaker_note: |
+  2 MINUTES (16)
+
+  - no need to learn nix lang
+  - simple version searches
+  - pins versions in lock file
+  - define simple build scripts
 
   Questions: 1-2 MINUTES
 -->
+
+Demo
+===
+
+# Nix REPL
+## Loading Package Registry
+## Exploration
+## Building Packages
+### Python with Various Dependencies
+## Running Stuff
+
+<!--
+speaker_note: |
+  5 MINUTES (21)
+
+  nix repl
+
+  <nixpkgs> # compare with channels/registry
+  python3
+  :l <nixpkgs>
+  python3
+  python3.withPackages # function
+  python3.withPackages (p: [p.numpy])
+  python3.withPackages (p: [p.jupyter])
+  :b python3.withPackages (p: [p.numpy])
+
+  Execute the binary and check imports ...
+-->
+
 
 <!-- vim:tw=60
 -->
