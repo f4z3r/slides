@@ -1,0 +1,181 @@
+= How to use AsciiDoc for Slides
+:author: Jakob Beckmann <jakob.beckmann@ipt.ch>
+:date: 2025-03-30
+// general
+:no-header-footer:
+:icons: font
+// theming
+:revealjsdir: ../assets/revealjs/base/
+:revealjs_customTheme: ../assets/revealjs/themes/ipt.css
+:customcss: ../assets/revealjs/themes/attributes.css
+:source-highlighter: highlightjs
+:highlightjs-theme: ../assets/revealjs/themes/highlightjs-github-dark.css
+// options
+:revealjs_history: false
+:revealjs_overview: false
+:revealjs_controls: false
+:revealjs_hash: true
+:revealjs_fragmentInURL: true
+:revealjs_showSlideNumber: speaker
+:revealjs_autoPlayMedia: true
+:revealjs_transitionSpeed: fast
+// view options
+:revealjs_viewDistance: 5
+:revealjs_width: 1408
+:revealjs_height: 792
+:revealjs_margin: 0.1
+// content
+:imagesdir: images
+// :iconfont-remote!:
+// :iconfont-name: fonts/fontawesome/css/all
+
+[.notes]
+--
+* These are some speaker notes
+* Which should be presented when pressed with kbd:[S] during presentation.
+--
+
+== Fragments
+
+=== Steps
+
+[.highlight-blue%step]
+blue
+
+[%step]
+white
+
+[.highlight-red%step]
+red
+
+=== Incremental bullets
+
+[%step]
+* this
+* is
+* revealed
+* gradually
+
+=== Definitions
+
+CPU:: The brain of the computer.
+Hard drive:: Permanent storage for operating system and/or user files.
+
+[.lightbg,background-opacity="0.7"]
+== Language
+
+Apply custom CSS attributes to slides
+
+[.notes]
+--
+This can be then applied using:
+
+[source,css]
+----
+section.red.background {
+  background-color: red;
+}
+----
+--
+
+== Layout
+
+[.col2]
+--
+* New reserved Java type `var`
+* _„real type“_ inferred by compiler *on first initialization*
+* can denote classes (`Integer`) & primitives (`int`)
+* *only*  available for _local variables_
+--
+
+[.source.col2,java]
+----
+var primitiveVal = 5;   // int
+var doubleVal    = 5d;  // double
+
+final var sl = new ArrayList<String>();
+
+var letters = "";
+for (var s : sl) {
+    letters += s.toLowerCase();
+}
+
+// var: enable annotation w/ type infer
+(var x, @NotNull var y) -> x + y;
+----
+
+
+== Check Boxes
+[%interactive,data-state=in-progress]
+- [ ] Dig
+- [x] Plant
+- [ ] Hose
+
+[%auto-animate]
+== !
+
+Matched element will be animated automatically!
+
+[%auto-animate]
+== !
+
+[.highlight]
+Matched element will be animated automatically!
+
+And move to the right position!
+
+[%hardbreaks]
+^
+^
+^
+^
+
+== Admonitions
+
+WARNING: This presentation is dangerous!
+
+{empty} +
+
+[TIP]
+It's possible to use Unicode glyphs as admonition icons.
+
+
+[%auto-animate]
+== Code
+
+[source%linenums,javascript,data-id=planets]
+----
+let planets = [
+  { name: 'mars', diameter: 6779 },
+]
+----
+
+[%auto-animate]
+== Code
+
+[source%linenums,javascript,data-id=planets]
+----
+let planets = [
+  { name: 'mars', diameter: 6779 },
+  { name: 'earth', diameter: 12742 },
+  { name: 'jupiter', diameter: 139820 }
+]
+----
+
+[%auto-animate]
+== Code
+
+[source%linenums,javascript,data-id=planets]
+----
+let circumferenceReducer = ( c, planet ) => {
+  return c + planet.diameter * Math.PI;
+}
+
+let planets = [
+  { name: 'mars', diameter: 6779 },
+  { name: 'earth', diameter: 12742 },
+  { name: 'jupiter', diameter: 139820 }
+]
+
+let c = planets.reduce( circumferenceReducer, 0 )
+----
