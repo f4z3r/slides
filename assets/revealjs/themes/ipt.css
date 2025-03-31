@@ -1,6 +1,6 @@
 /**
- * Solarized Dark theme for reveal.js.
- * Author: Achim Staebler
+ * Theme based on the colors used by IPT. Provides some additional classes
+* to provide improved styling for slides.
  */
 @import url(../fonts/fira_code.css);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
