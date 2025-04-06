@@ -1,18 +1,19 @@
 = How to use AsciiDoc for Slides
 :author: Jakob Beckmann <jakob.beckmann@ipt.ch>
 :date: 2025-03-30
+:title-slide-background-image: ../../assets/img/cover-blue-01.png
 // general
 :no-header-footer:
 :icons: font
 // theming
 :revealjsdir: ../assets/revealjs/base/
 :revealjs_customTheme: ../assets/revealjs/themes/ipt.css
-:customcss: ../assets/revealjs/themes/attributes.css
+// :customcss: ../assets/revealjs/themes/attributes.css
 :source-highlighter: highlightjs
 :highlightjs-theme: ../assets/revealjs/themes/highlightjs-github-dark.css
 // options
 :revealjs_history: false
-:revealjs_overview: false
+:revealjs_overview: true
 :revealjs_controls: false
 :revealjs_hash: true
 :revealjs_fragmentInURL: true
@@ -21,9 +22,11 @@
 :revealjs_transitionSpeed: fast
 // view options
 :revealjs_viewDistance: 5
-:revealjs_width: 1408
-:revealjs_height: 792
+:revealjs_width: 2550
+:revealjs_height: 1440
 :revealjs_margin: 0.1
+:revealjs_center: false
+:revealjs_disableLayout: false
 // content
 :imagesdir: images
 // :iconfont-remote!:
@@ -33,6 +36,7 @@
 --
 * These are some speaker notes
 * Which should be presented when pressed with kbd:[S] during presentation.
+* And press kbd:[O] for an overview.
 --
 
 == Fragments
@@ -48,7 +52,7 @@ white
 [.highlight-red%step]
 red
 
-=== Incremental bullets
+=== Incremental *bullets*
 
 [%step]
 * this
@@ -78,9 +82,12 @@ section.red.background {
 ----
 --
 
+[.columns]
 == Layout
 
-[.col2]
+// See https://docs.asciidoctor.org/reveal.js-converter/latest/converter/syntax/layout/
+
+[.column]
 --
 * New reserved Java type `var`
 * _„real type“_ inferred by compiler *on first initialization*
@@ -88,10 +95,12 @@ section.red.background {
 * *only*  available for _local variables_
 --
 
-[.source.col2,java]
+[.column]
+--
+[source,java]
 ----
 var primitiveVal = 5;   // int
-var doubleVal    = 5d;  // double
+var doubleVal    = 5d;  // double <1>
 
 final var sl = new ArrayList<String>();
 
@@ -104,12 +113,9 @@ for (var s : sl) {
 (var x, @NotNull var y) -> x + y;
 ----
 
+<1> [x-small]#this is an explaination#
+--
 
-== Check Boxes
-[%interactive,data-state=in-progress]
-- [ ] Dig
-- [x] Plant
-- [ ] Hose
 
 [%auto-animate]
 == !
@@ -130,15 +136,51 @@ And move to the right position!
 ^
 ^
 
+== sidebars
+
+This is main content, it can get very long but we still like the sideblock very much yes.
+This is main content, it can get very long but we still like the sideblock very much yes.
+
+.This is a title
+****
+sidebar block
+
+shown on sidebar?
+****
+
+.another
+****
+yse
+****
+
 == Admonitions
 
-WARNING: This presentation is dangerous!
+NOTE: Don't forget the children!
 
-{empty} +
+{empty}
 
-[TIP]
-It's possible to use Unicode glyphs as admonition icons.
+TIP: Look for the warp zone under the bridge.
 
+{empty}
+
+IMPORTANT: Sign off before stepping away from your computer.
+
+{empty}
+
+WARNING: The software you're about to use is untested.
+
+{empty}
+
+CAUTION: Slippery when wet.
+
+{empty}
+
+.Caution title
+[CAUTION]
+--
+This is main content, it can get very long but we still like the sideblock very much yes.
+This is main content, it can get very long but we still like the sideblock very much yes.
+--
 
 [%auto-animate]
 == Code
@@ -151,7 +193,7 @@ let planets = [
 ----
 
 [%auto-animate]
-== Code
+=== Code
 
 [source%linenums,javascript,data-id=planets]
 ----
@@ -163,7 +205,7 @@ let planets = [
 ----
 
 [%auto-animate]
-== Code
+=== Code
 
 [source%linenums,javascript,data-id=planets]
 ----
@@ -179,3 +221,163 @@ let planets = [
 
 let c = planets.reduce( circumferenceReducer, 0 )
 ----
+
+[.center%notitle]
+=== Centered block
+[source%linenums,javascript,data-id=planets]
+----
+let planets = [
+  { name: 'mars', diameter: 6779 },
+]
+----
+
+=== Code References
+
+image::../../assets/img/cover-pink-01.png[background, size=cover]
+
+[source%linenums,ruby]
+----
+require 'sinatra' // <1>
+
+get '/hi' do // <2>
+  "Hello World!" // <3>
+end
+----
+<1> Library import
+<2> URL mapping
+<3> HTTP response body
+
+
+=== Long Code
+
+[source,lua,linenums]
+----
+local dashboard = require("alpha.themes.startify")
+
+dashboard.section.header.val = {
+  [[ ⠀⢠⣶⣿⣿⣗⡢⠀⠀⠀⠀⠀⠀⢤⣒⣿⣿⣷⣆⠀]],
+  [[⠀⠋⠉⠉⠙⠻⣿⣷⡄⠀⠀⠀⣴⣿⠿⠛⠉⠉⠉⠃⠀]],
+  [[⠀⠀⢀⡠⢤⣠⣀⡹⡄⠀⠀⠀⡞⣁⣤⣠⠤⡀⠀⠀⠀]],
+  [[⢐⡤⢾⣿⣿⢿⣿⡿⠀⠀⠀⠀⠸⣿⣿⢿⣿⣾⠦⣌⠀]],
+  [[⠁⠀⠀⠀⠉⠈⠀⠀⣸⠀⠀⢰⡀⠀⠈⠈⠀⠀⠀⠀⠁]],
+  [[⠀⠀⠀⠀⠀⠀⣀⡔⢹⠀⠀⢸⠳⡄⡀⠀⠀⠀⠀⠀⠀]],
+  [[⠸⡦⣤⠤⠒⠋⠘⢠⡸⣀⣀⡸⣠⠘⠉⠓⠠⣤⢤⡞⠀]],
+  [[⠀⢹⡜⢷⣄⠀⣀⣀⣾⡶⢶⣷⣄⣀⡀⢀⣴⢏⡾⠁⠀]],
+  [[⠀⠀⠹⡮⡛⠛⠛⠻⠿⠥⠤⠽⠿⠛⠛⠛⣣⡾⠁⠀⠀]],
+  [[⠀⠀⠀⠙⢄⠁⠀⠀⠀⣄⣀⡄⠀⠀⠀⢁⠞⠀⠀⠀⠀]],
+  [[⠀⠀⠀⠀⠀⠂⠀⠀⠀⢸⣿⠀⠀⠀⠠⠂⠀⠀⠀⠀⠀]],
+  [[⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀]],
+  [[⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀]],
+}
+
+dashboard.section.header.opts = {
+  position = "center",
+  hl = "@boolean",
+  shrink_margin = false,
+}
+
+dashboard.section.top_buttons.val = {
+  dashboard.button("f", "  Files", ':lua require("telescope.builtin").find_files()<cr>'),
+  dashboard.button("g", "󰊳  Grep", ':lua require("telescope.builtin").live_grep()<cr>'),
+  dashboard.button(
+    "t",
+    "󱋡  Temp File",
+    ':lua vim.cmd(string.format("e %s", require("lazy.utils").get_temp_file()))<cr>'
+  ),
+}
+dashboard.section.bottom_buttons.val = {
+  dashboard.button("q", "󰩈  Quit", ":qa<CR>"),
+}
+
+require("alpha").setup(dashboard.config)
+----
+
+== Quotes
+
+After landing the cloaked Klingon bird of prey in Golden Gate park:
+
+[quote,Captain James T. Kirk,Star Trek IV: The Voyage Home]
+Everybody remember where we parked. and this is getting a bit longer buet yer
+
+=== Example
+
+.Optional Title
+==========================
+*Example* Block
+
+Use: examples :)
+
+Default caption "Example:"
+can be changed using
+
+ [caption="Custom: "]
+
+before example block.
+==========================
+
+[.center.uppercase]
+=== Centered Title
+
+image::../../assets/img/cover-pink-02.png[background, size=cover]
+
+[.center]
+=== !
+
+[.r-fit-text]
+Some huge text...
+
+
+=== Links
+
+link:slides.html[description]
+
+== Tables
+
+.An example table
+[options="header,footer"]
+|=======================
+|Col 1|Col 2      |Col 3
+|1    |Item 1     |a
+|2    |Item 2     |b
+|3    |Item 3     |c
+|6    |Three items|d
+|=======================
+
+== Tables
+
+.CSV data, 15% each column
+[format="csv",width="60%",cols="4"]
+[frame="topbot",grid="none"]
+|======
+1,2,3,4
+a,b,c,d
+A,B,C,D
+|======
+
+== Tables
+
+[grid="rows",format="csv"]
+[options="header",cols="^,<,<s,<,>m"]
+|===========================
+ID,FName,LName,Address,Phone
+1,Vasya,Pupkin,London,+123
+2,X,Y,"A,B",45678
+|===========================
+
+== Tables
+
+.Multiline cells, row/col span
+|====
+|Date |Duration |Avg HR |Notes
+
+|22-Aug-08 .2+^.^|10:24 | 157 |
+Worked out MSHR (max sustainable
+heart rate) by going hard
+for this interval.
+
+|22-Aug-08 | 152 |
+Back-to-back with previous interval.
+
+|24-Aug-08 3+^|none
+
+|====

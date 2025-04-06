@@ -1,79 +1,110 @@
-/**
- * Theme based on the colors used by IPT. Provides some additional classes
-* to provide improved styling for slides.
- */
 @import url(../fonts/fira_code.css);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
-/**
- * Solarized colors by Ethan Schoonover
- */
-section.has-light-background, section.has-light-background h1, section.has-light-background h2, section.has-light-background h3, section.has-light-background h4, section.has-light-background h5, section.has-light-background h6 {
-  color: #222;
-}
-
-/*********************************************
+/****************************************************
  * GLOBAL STYLES
- *********************************************/
+ ****************************************************/
 :root {
-  --r-background-color: #002b36;
-  --r-main-font: Fira Code;
-  --r-main-font-size: 40px;
-  --r-main-color: #93a1a1;
-  --r-block-margin: 20px;
-  --r-heading-margin: 0 0 20px 0;
-  --r-heading-font: Fira Code;
-  --r-heading-color: #eee8d5;
-  --r-heading-line-height: 1.2;
-  --r-heading-letter-spacing: normal;
-  --r-heading-text-transform: uppercase;
-  --r-heading-text-shadow: none;
-  --r-heading-font-weight: normal;
-  --r-heading1-text-shadow: none;
-  --r-heading1-size: 3.77em;
-  --r-heading2-size: 2.11em;
-  --r-heading3-size: 1.55em;
-  --r-heading4-size: 1em;
-  --r-code-font: monospace;
-  --r-link-color: #268bd2;
-  --r-link-color-dark: rgb(32.3, 118.15, 178.5);
-  --r-link-color-hover: rgb(77.5161290323, 162.8774193548, 222.8838709677);
-  --r-selection-background-color: #d33682;
-  --r-selection-color: #fff;
-  --r-overlay-element-bg-color: 240, 240, 240;
-  --r-overlay-element-fg-color: 0, 0, 0;
+  --r-main-font: Calibri, sans-serif;
+  --r-main-font-size: 55px;
 
-  --r-color-warning: #7c0a02;
-  --r-color-tip: #191970;
+  --r-block-margin: 40px;
+
+  --r-heading-margin: 20px 0 85px 0;
+  --r-heading-font: Calibri, sans-serif;
+  --r-heading-line-height: 1.0;
+  --r-heading-letter-spacing: normal;
+  --r-heading-text-transform: none;
+  --r-heading-text-shadow: none;
+  --r-heading-font-weight: bold;
+  --r-heading1-text-shadow: none;
+  --r-heading1-text-font: Georgia Semibold, sans-serif;
+  --r-heading1-size: 2.11em;
+  --r-heading2-size: 1.55em;
+  --r-heading3-size: 1.15em;
+  --r-heading4-size: 1em;
+
+  --r-code-font: Fira Code;
+
+  --r-color-text-blue: #0f1e5f;
+  --r-color-text-red: #6e0046;
+
+  --r-color-primary-blue: #2424aa;
+  --r-color-primary-red: #aa0a69;
+  --r-color-light-blue: #4b46dc;
+  --r-color-light-red: #ce468;
+  --r-color-very-light-blue: #8290f0;
+  --r-color-very-light-red: #e688b4;
+  --r-color-gray-blue: #f2f4f5;
+  --r-color-gray-red: #fae2f2;
+
+  --r-color-dark-orange: #e17c41;
+  --r-color-base-orange: #faa464;
+  --r-color-light-orange: #ffdcbc;
+  --r-color-dark-yellow: #e9c500;
+  --r-color-base-yellow: #ffdc68;
+  --r-color-light-yellow: #ffeda5;
+  --r-color-dark-rouge: #c63e50;
+  --r-color-base-rouge: #ff6882;
+  --r-color-light-rouge: #ffa8b0;
+  --r-color-dark-purple: #5438a6;
+  --r-color-base-purple: #765ad6;
+  --r-color-light-purple: #a38ff5;
+  --r-color-dark-turquoise: #1aa4b8;
+  --r-color-base-turquoise: #98d6e1;
+  --r-color-light-turquoise: #ceebf0;
+
+  /* --r-overlay-element-bg-color: 240, 240, 240; */
+  /* --r-overlay-element-fg-color: 0, 0, 0; */
 }
 
 .reveal-viewport {
-  background: #002b36;
-  background-color: var(--r-background-color);
+  background: var(--r-color-gray-blue);
+  background-color: var(--r-color-gray-blue);
 }
 
 .reveal {
   font-family: var(--r-main-font);
   font-size: var(--r-main-font-size);
-  font-weight: normal;
-  color: var(--r-main-color);
+  font-weight: bold;
+  color: var(--r-color-text-blue);
 }
 
 .reveal ::selection {
-  color: var(--r-selection-color);
-  background: var(--r-selection-background-color);
+  color: var(--r-color-gray-blue);
+  background: var(--r-color-text-red);
   text-shadow: none;
 }
 
 .reveal ::-moz-selection {
-  color: var(--r-selection-color);
-  background: var(--r-selection-background-color);
+  color: var(--r-color-gray-blue);
+  background: var(--r-color-text-red);
   text-shadow: none;
+}
+
+.reveal div.slide-background-content {
+  background-image: url('../../img/cover-white-01.png');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .reveal .slides section,
 .reveal .slides section > section {
+  text-align: left;
   line-height: 1.3;
   font-weight: inherit;
+}
+
+.reveal section.title {
+  position: absolute;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+}
+
+.reveal section div.title {
+  color: var(--r-color-text-red)
 }
 
 /*********************************************
@@ -86,7 +117,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 .reveal h5,
 .reveal h6 {
   margin: var(--r-heading-margin);
-  color: var(--r-heading-color);
+  color: var(--r-color-text-red);
   font-family: var(--r-heading-font);
   font-weight: var(--r-heading-font-weight);
   line-height: var(--r-heading-line-height);
@@ -97,7 +128,21 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 
 .reveal h1 {
+  color: var(--r-color-gray-blue);
   font-size: var(--r-heading1-size);
+  font-family: var(--r-heading1-text-font);
+  text-align: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+  margin: 0;
+  text-shadow: var(--r-heading1-text-shadow);
+}
+
+.reveal p.byline {
+  color: var(--r-color-text-blue);
 }
 
 .reveal h2 {
@@ -112,14 +157,11 @@ section.has-light-background, section.has-light-background h1, section.has-light
   font-size: var(--r-heading4-size);
 }
 
-.reveal h1 {
-  text-shadow: var(--r-heading1-text-shadow);
-}
-
 /*********************************************
  * OTHER
  *********************************************/
 .reveal p {
+  font-weight: bold;
   margin: var(--r-block-margin) 0;
   line-height: 1.3;
 }
@@ -144,7 +186,22 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 .reveal strong,
 .reveal b {
-  font-weight: bold;
+  color: var(--r-color-text-red);
+}
+
+.reveal h1 strong,
+.reveal h1 b,
+.reveal h2 strong,
+.reveal h2 b,
+.reveal h3 strong,
+.reveal h3 b,
+.reveal h4 strong,
+.reveal h4 b,
+.reveal h5 strong,
+.reveal h5 b,
+.reveal h6 strong,
+.reveal h6 b {
+  color: var(--r-color-text-blue);
 }
 
 .reveal em {
@@ -185,27 +242,14 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 .reveal dt {
   font-weight: bold;
+  color: var(--r-color-text-red);
 }
 
 .reveal dd {
   margin-left: 40px;
+  font-size: 0.75em;
 }
 
-.reveal blockquote {
-  display: block;
-  position: relative;
-  width: 70%;
-  margin: var(--r-block-margin) auto;
-  padding: 5px;
-  font-style: italic;
-  background: rgba(255, 255, 255, 0.05);
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
-}
-
-.reveal blockquote p:first-child,
-.reveal blockquote p:last-child {
-  display: inline-block;
-}
 
 .reveal q {
   font-style: italic;
@@ -217,7 +261,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
   width: 90%;
   margin: var(--r-block-margin) auto;
   text-align: left;
-  font-size: 0.55em;
+  font-size: 0.75em;
   font-family: var(--r-code-font);
   line-height: 1.2em;
   word-wrap: break-word;
@@ -226,15 +270,21 @@ section.has-light-background, section.has-light-background h1, section.has-light
 
 .reveal code {
   font-family: var(--r-code-font);
+  color: #c9d1d9;  /* below colors taken from github colors */
+  background: #0d1117;
+  font-weight: normal;
   text-transform: none;
   tab-size: 2;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-size: 0.75em;
 }
 
 .reveal pre code {
   display: block;
   padding: 5px;
   overflow: auto;
-  max-height: 400px;
+  max-height: 1040px;
   word-wrap: normal;
 }
 
@@ -304,30 +354,105 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 
 /*********************************************
+ * SIDEBARS
+ *********************************************/
+
+/* TODO: this is broken */
+/* .reveal section { */
+/*     display: grid; */
+/*     grid-template-columns: 2fr 1fr; */
+/*     gap: 20px; */
+/* } */
+/**/
+/* .reveal section > div:not(.sidebarblock) { */
+/*     grid-column: 1; */
+/* } */
+/**/
+/* .reveal section > div.sidebarblock { */
+/*     grid-column: 2; */
+/* } */
+/**/
+/* .reveal section > div.sidebarblock > div { */
+/*     background-color: #f0f0f0; */
+/*     padding: 10px; */
+/*     margin-bottom: 10px; */
+/*     border-radius: 5px; */
+/* } */
+/**/
+/* .reveal section > div.sidebarblock > div:last-child { */
+/*     margin-bottom: 0; */
+/* } */
+
+
+/*********************************************
+ * EXMAPLES
+ *********************************************/
+
+/* TODO: example blocks */
+
+
+/*********************************************
+ * TABLES
+ *********************************************/
+
+.reveal thead {
+  background: var(--r-color-very-light-blue);
+}
+
+.reveal tfoot {
+  background: var(--r-color-gray-red);
+}
+
+/*********************************************
+ * QUOTES
+ *********************************************/
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 25px auto;
+  padding: 15px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+}
+
+.reveal blockquote p:first-child,
+.reveal blockquote p:last-child {
+  display: inline-block;
+}
+
+.reveal div.attribution {
+  font-size: 0.75em;
+  text-align: right;
+}
+
+/*********************************************
  * LINKS
  *********************************************/
 .reveal a {
-  color: var(--r-link-color);
+  color: var(--r-color-base-purple);
   text-decoration: none;
   transition: color 0.15s ease;
 }
 
 .reveal a:hover {
-  color: var(--r-link-color-hover);
+  color: var(--r-color-light-purple);
   text-shadow: none;
   border: none;
 }
 
 .reveal .roll span:after {
   color: #fff;
-  background: var(--r-link-color-dark);
+  background: var(--r-color-dark-purple);
 }
 
 /*********************************************
  * Frame helper
  *********************************************/
 .reveal .r-frame {
-  border: 4px solid var(--r-main-color);
+  border: 4px solid var(--r-color-text-blue);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
 
@@ -336,7 +461,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 
 .reveal a:hover .r-frame {
-  border-color: var(--r-link-color);
+  border-color: var(--r-color-base-purple);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
 }
 
@@ -351,18 +476,38 @@ section.has-light-background, section.has-light-background h1, section.has-light
 }
 
 .reveal .admonitionblock.warning {
-  background: var(--r-color-warning);
+  background: var(--r-color-primary-red);
+  color: var(--r-color-gray-blue);
+}
+
+/* FIX: this does not work */
+.reveal .admonitionblock > .title {
+  color: var(--r-color-text-blue);
 }
 
 .reveal .admonitionblock.tip {
-  background: var(--r-color-tip);
+  background: var(--r-color-primary-blue);
+  color: var(--r-color-gray-blue);
+}
+
+.reveal .admonitionblock.caution{
+  background: var(--r-color-dark-orange);
+  color: var(--r-color-gray-blue);
+}
+
+.reveal .admonitionblock.note{
+}
+
+.reveal .admonitionblock.important{
+  background: var(--r-color-text-red);
+  color: var(--r-color-gray-blue);
 }
 
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls {
-  color: var(--r-link-color);
+  color: var(--r-color-base-purple);
 }
 
 /*********************************************
@@ -370,7 +515,7 @@ section.has-light-background, section.has-light-background h1, section.has-light
  *********************************************/
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
-  color: var(--r-link-color);
+  color: var(--r-color-base-purple);
 }
 
 /*********************************************
@@ -378,6 +523,83 @@ section.has-light-background, section.has-light-background h1, section.has-light
  *********************************************/
 @media print {
   .backgrounds {
-    background-color: var(--r-background-color);
+    background-color: var(--r-color-gray-blue);
   }
+}
+
+/*********************************************
+ * ATTRIBUTES: COLOR
+ *********************************************/
+section.red.background {
+  background-color: var(--r-color-primary-red);
+}
+section.blue.background {
+  background-color: var(--r-color-primary-blue);
+}
+section.purple.background {
+  background-color: var(--r-color-base-purple);
+}
+section.orange.background {
+  background-color: var(--r-color-base-orange);
+}
+
+/*********************************************
+ * ATTRIBUTES: STYLINGS
+ *********************************************/
+section.degrade {
+  text-transform: none;
+}
+
+.reveal section.center {
+  text-align: center !important;
+  vertical-align: center;
+}
+
+.reveal section.uppercase h1,
+.reveal section.uppercase h2,
+.reveal section.uppercase h3,
+.reveal section.uppercase h4,
+.reveal section.uppercase h5,
+.reveal section.uppercase h6 {
+  text-transform: uppercase;
+}
+
+.small p, .small li, p.small, div.small, span.small, .small code, .TABLE.small, .small TH {
+  font-size: 86% !important;
+}
+
+.x-small p, .x-small li, p.x-small, div.x-small, span.x-small, .x-small code, TABLE.x-small, .x-small TH {
+  font-size: 78% !important;
+}
+
+.reveal .x-small TH, .reveal .x-small TD, .x-small TD P {
+  padding: 0.1em 0.25em;
+  margin: 8px 0;
+}
+
+.xx-small p, .xx-small li, p.xx-small, div.xx-small, span.xx-small, .xx-small code, .xx-small TABLE, .xx-small TH {
+  font-size: 65% !important;
+}
+
+/*********************************************
+ * Code references
+ *********************************************/
+.c-ref  {
+  font-weight: lighter !important;
+  font-size: 50% !important;
+  vertical-align: super !important;
+  margin: 0 8px !important;
+  opacity: 0.6  !important;
+}
+.c-ref > code {
+  border: 1px solid rgba(255,255,255,.6) !important;
+  background:  darkblue !important;
+}
+A.c-ref > code {
+  color: whitesmoke !important;
+  text-decoration: underline !important;
+}
+
+div.colist i.conum {
+  font-size: 50% !important;
 }
