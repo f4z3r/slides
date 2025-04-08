@@ -564,6 +564,14 @@ section.degrade {
   text-transform: uppercase;
 }
 
+.reveal div.boxed {
+  margin: 40px;
+  padding: 20px;
+  display: block;
+  background: var(--r-color-gray-red);
+  box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.15);
+}
+
 .small p, .small li, p.small, div.small, span.small, .small code, .TABLE.small, .small TH {
   font-size: 86% !important;
 }

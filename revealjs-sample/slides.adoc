@@ -116,6 +116,25 @@ for (var s : sl) {
 <1> [x-small]#this is an explaination#
 --
 
+[.columns]
+== Layout
+
+// See https://docs.asciidoctor.org/reveal.js-converter/latest/converter/syntax/layout/
+
+[.column.boxed]
+.Box Title
+--
+with some multi line content
+
+That can be quite long indeed without much issues
+--
+
+[.column.boxed]
+* this is another box
+* with bullets
+
+[.column.boxed]
+And a last one that can contain whatever really
 
 [%auto-animate]
 == !
