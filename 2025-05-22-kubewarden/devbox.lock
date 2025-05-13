@@ -1,0 +1,104 @@
+{
+  "lockfile_version": "1",
+  "packages": {
+    "asciidoctor-with-extensions@2.0.23": {
+      "last_modified": "2025-05-06T08:06:31Z",
+      "resolved": "github:NixOS/nixpkgs/1cb1c02a6b1b7cf67e3d7731cbbf327a53da9679#asciidoctor-with-extensions",
+      "source": "devbox-search",
+      "version": "2.0.23",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/02khw3915chw18ixj768k2acang50qq0-asciidoctor-2.0.23",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/02khw3915chw18ixj768k2acang50qq0-asciidoctor-2.0.23"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/xj4df88jz9hd9f94ya7w40qc7rgr36k7-asciidoctor-2.0.23",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/xj4df88jz9hd9f94ya7w40qc7rgr36k7-asciidoctor-2.0.23"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/nf09syhj64i5jx5q29lqqhlkdz0jbhs8-asciidoctor-2.0.23",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/nf09syhj64i5jx5q29lqqhlkdz0jbhs8-asciidoctor-2.0.23"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/rz42dd3p61kdvfn0sw92cb4s9kb796c5-asciidoctor-2.0.23",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/rz42dd3p61kdvfn0sw92cb4s9kb796c5-asciidoctor-2.0.23"
+        }
+      }
+    },
+    "github:NixOS/nixpkgs/nixpkgs-unstable": {
+      "resolved": "github:NixOS/nixpkgs/eaeed9530c76ce5f1d2d8232e08bec5e26f18ec1?lastModified=1747060738&narHash=sha256-ByfPRQuqj%2BnhtVV0koinEpmJw0KLzNbgcgi9EF%2BNVow%3D"
+    },
+    "miniserve@0.28.0": {
+      "last_modified": "2025-05-06T08:06:31Z",
+      "resolved": "github:NixOS/nixpkgs/1cb1c02a6b1b7cf67e3d7731cbbf327a53da9679#miniserve",
+      "source": "devbox-search",
+      "version": "0.28.0",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/gfs3j20xgs2s6cdgqm85r6l54dird8jv-miniserve-0.28.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/gfs3j20xgs2s6cdgqm85r6l54dird8jv-miniserve-0.28.0"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/v1chiil04jlj62sda9hyc09z1dpyb926-miniserve-0.28.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/v1chiil04jlj62sda9hyc09z1dpyb926-miniserve-0.28.0"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/wz78jn3wv2xi9d1v0g7iqpi0w0h6hsmj-miniserve-0.28.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/wz78jn3wv2xi9d1v0g7iqpi0w0h6hsmj-miniserve-0.28.0"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "out",
+              "path": "/nix/store/p9yl5vdprzps7wy6d3gyxnka4n288s5d-miniserve-0.28.0",
+              "default": true
+            }
+          ],
+          "store_path": "/nix/store/p9yl5vdprzps7wy6d3gyxnka4n288s5d-miniserve-0.28.0"
+        }
+      }
+    }
+  }
+}

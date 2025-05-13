@@ -1,0 +1,47 @@
+= Kubewarden BBL
+:author: Jakob Beckmann <jakob.beckmann@ipt.ch>
+:date: 2025-05-22
+:title-slide-background-image: ../../assets/img/cover-blue-01.png
+// general
+:no-header-footer:
+:icons: font
+// theming
+:revealjsdir: ../assets/revealjs/base/
+:revealjs_customTheme: ../assets/revealjs/themes/ipt.css
+:customcss: ./style.css
+:source-highlighter: highlightjs
+:highlightjs-theme: ../assets/revealjs/themes/highlightjs-github-dark.css
+// options
+:revealjs_history: false
+:revealjs_overview: true
+:revealjs_controls: false
+:revealjs_hash: true
+:revealjs_fragmentInURL: true
+:revealjs_showSlideNumber: speaker
+:revealjs_autoPlayMedia: true
+:revealjs_transitionSpeed: fast
+// view options
+:revealjs_viewDistance: 5
+:revealjs_width: 2550
+:revealjs_height: 1440
+:revealjs_margin: 0.1
+:revealjs_center: false
+:revealjs_disableLayout: false
+// content
+:imagesdir: images
+// :iconfont-remote!:
+// :iconfont-name: fonts/fontawesome/css/all
+
+== Policy Engines
+=== Use Cases
+=== Implementations
+== Kubewarden
+
+== Demo
+
+- CEL
+- OPA
+- Rust
+
+== Comparison
+== Verdict
