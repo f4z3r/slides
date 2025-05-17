@@ -103,8 +103,33 @@
   margin: 0;
 }
 
+/*********************************************
+ * TITLES
+ *********************************************/
+.reveal section .listingblock div.title {
+  color: var(--r-color-text-blue);
+  text-align: center;
+  text-decoration: underline !important;
+  font-size: smaller;
+}
+
 .reveal section div.title {
-  color: var(--r-color-text-red)
+  color: var(--r-color-text-red);
+}
+
+/*********************************************
+ * LAYOUT
+ *********************************************/
+
+div.columns > div.content {
+    display: flex;
+}
+
+div.columns > .content > div.column {
+    display: block;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 /*********************************************
@@ -570,6 +595,18 @@ section.degrade {
   display: block;
   background: var(--r-color-gray-red);
   box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.15);
+}
+
+.xx-large p, .xx-large li, p.xx-large, div.xx-large, span.xx-large, .xx-large code, .TABLE.xx-large, .xx-large TH {
+  font-size: 145% !important;
+}
+
+.x-large p, .x-large li, p.x-large, div.x-large, span.x-large, .x-large code, .TABLE.x-large, .x-large TH {
+  font-size: 122% !important;
+}
+
+.large p, .large li, p.large, div.large, span.large, .large code, .TABLE.large, .large TH {
+  font-size: 114% !important;
 }
 
 .small p, .small li, p.small, div.small, span.small, .small code, .TABLE.small, .small TH {

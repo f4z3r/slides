@@ -32,10 +32,116 @@
 // :iconfont-remote!:
 // :iconfont-name: fonts/fontawesome/css/all
 
+[.center.uppercase.x-large]
 == Policy Engines
+
+=== RBAC
+
+[.text-center]
+image::./standard-k8s-rbac.excalidraw.png[height=1000px]
+
+=== RBAC
+
+[.text-center]
+image::./rbac-k9s.png[]
+
+[.columns]
+====
+[.column.boxed]
+.Uses:
+--
+* `+ServiceAccount+`, `+User+`, `+Group+`
+* `+Role+`, `+ClusterRole+`
+* `+RoleBinding+`, `+ClusterRoleBinding+`
+--
+
+[.column.boxed]
+.Limitations
+--
+* Only applied to CRUD operations
+* Does not check content
+* Only supports basic allow/deny
+--
+====
+
+[.center%notitle]
+=== RBAC
+
+[source, yaml, linenums]
+.Sample role definition
+----
+include::./assets/role.yaml[]
+----
+
+[%auto-animate]
+=== Policy Engine
+
+[.text-center]
+image::./policy-engine-k8s.excalidraw.png[height=1000px]
+
+[.columns%auto-animate]
+=== Policy Engine
+
+[.text-center.column]
+image::./policy-engine-k8s.excalidraw.png[height=500px]
+
+[.column]
+--
+* Enabled via *Dynamic Access Control*
+* Operator + validating admission webhook
+* Access controlled via *Custom Resources*
+* Often supports *mutations*
+* Works *on top of RBAC*
+--
+
 === Use Cases
+
+[.columns]
+====
+
+[.column]
+--
+Access Control::
+* More *granular* control on CRUD operations
+* Control resource *internals*
+
+FinOps::
+* Block if *cost impact* too high
+* Provide cost *estimation* on apply
+--
+
+[.column]
+--
+Compliance::
+* Control of *usage* of resources
+* *Warn* on non-compliant operations
+* *Mutate* resources as needed
+--
+
+====
+
+{empty}
+
+[source, console]
+.FinOps Example using Gatekeeper and OpenCost
+----
+$ kubectl apply -f deployment.yaml
+Error from server (Forbidden): error when creating "deployment.yaml": admission webhook
+"validation.gatekeeper.sh" denied the request:
+[monthly-cpu-cost-limit]: Deployment-blocked: Predicted monthly CPU cost $7290.0 exceeds limit $5000.0
+Current usage: $6.37/hours ($4590.0/month) using 5.9 cores (based on 13.50 hours of data)
+New deployment: 3 (3.0 cores) will cost $2700.0/month
+Total predicted: $7290.0/month (Rate: $1.25 per core hour)
+----
+
 === Implementations
+
+* what is out there (kyverno, opa gatekeeper, kubewarden)
+
 == Kubewarden
+
+- capabilities
+- architecture
 
 == Demo
 
@@ -44,4 +150,5 @@
 - Rust
 
 == Comparison
+
 == Verdict
