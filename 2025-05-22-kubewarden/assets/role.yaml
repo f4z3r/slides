@@ -4,7 +4,11 @@ metadata:
   name: kube-proxy
   namespace: kube-system
 rules:
-- apiGroups: [""]
-  resourceNames: ["kube-proxy"]
-  resources: ["configmaps"]
-  verbs: ["get"]
+- apiGroups:
+  - ""
+  resourceNames:
+  - kube-proxy
+  resources:
+  - configmaps
+  verbs:
+  - get

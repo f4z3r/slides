@@ -1,0 +1,24 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.12.0/.schema/devbox.schema.json",
+  "packages": [
+    "pandoc@3.1.11.1",
+    "pandoc-imagine@0.1.6",
+    "miniserve@0.27.1",
+  ],
+  "shell": {
+    "scripts": {
+      "build": [
+        "pandoc slides.md -o slides.html  -s -t revealjs --slide-level 2 -F pandoc-imagine -L ../assets/revealjs/scripts/code-includes.lua  -L ../assets/revealjs/scripts/codeblocks.lua --template ../assets/revealjs/templates/main.html",
+      ],
+      "serve": [
+        "pandoc slides.md -o slides.html  -s -t revealjs --slide-level 2 -F pandoc-imagine -L ../assets/revealjs/scripts/code-includes.lua  -L ../assets/revealjs/scripts/codeblocks.lua --template ../assets/revealjs/templates/main.html",
+        "cd ..",
+        "miniserve .",
+      ],
+      "present": [
+        "xdg-open 'http://localhost:8080'",
+      ],
+    },
+  }
+}
+
