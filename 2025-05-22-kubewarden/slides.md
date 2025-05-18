@@ -241,13 +241,41 @@ spec:
   timeoutSeconds: 10
 </code></pre>
 
-# {.center}
+## Demo
+
+::::::{.columns style="padding-top: 5%; text-align: center;"}
+:::{.column .boxed width=25%}
+#### CEL {.blue}
+:::
+
+:::{.column .boxed width=25%}
+#### OTS WASM {.blue}
+:::
+
+:::{.column .boxed width=25%}
+#### Rego {.blue}
+:::
+
+:::{.column .boxed width=25%}
+#### Custom WASM {.blue}
+:::
+::::::
+
+&nbsp;
+
+&nbsp;
+
+:::{style="text-align: center;"}
+[https://artifacthub.io/](https://artifacthub.io/packages/search?kind=13){.xx-large}
+:::
+
+## {.center}
 
 [https://github.com/iptch/kubewarden-demo](https://github.com/iptch/kubewarden-demo){.xx-large}
 
-## Verdict {.uppercase}
+# Verdict {.uppercase}
 
-::::::{.columns}
+::::::{.columns style="padding-top: 15%"}
 :::{.column .boxed width=50%}
 #### Pros:
 - Immense flexibility

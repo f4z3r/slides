@@ -553,6 +553,13 @@ section.orange.background {
   background-color: var(--r-color-base-orange);
 }
 
+.reveal .red {
+  color: var(--r-color-text-red) !important;
+}
+.reveal .blue {
+  color: var(--r-color-text-blue) !important;
+}
+
 /*********************************************
  * ATTRIBUTES: STYLINGS
  *********************************************/
