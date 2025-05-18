@@ -62,7 +62,7 @@ disableLayout: false
 
 ## Sample Role Definition
 
-::: {.v-center-container-on-slide style="height: 80vh;"}
+::: {.v-center-container-on-slide style="height: 1200px;"}
 ```{.yaml include="./assets/role.yaml" .numberLines}
 ```
 :::
@@ -73,7 +73,7 @@ disableLayout: false
 
 # Policy Engine {data-auto-animate=true}
 
-::::::::::::{.v-center-container-on-slide style="height: 80vh;"}
+::::::::::::{.v-center-container-on-slide style="height: 1200px;"}
 ::::::{.columns}
 :::{.column width=50%}
 ![](images/policy-engine-k8s.excalidraw.png)
@@ -167,13 +167,13 @@ Total predicted: $7290.0/month (Rate: $1.25 per core hour)
 
 ## Architecture
 
-:::{.v-center-container-on-slide style="height: 80vh;"}
+:::{.v-center-container-on-slide style="height: 1200px;"}
 ![](images/kubewarden-architecture.excalidraw.png){height=1200px}
 :::
 
 ## Policy Server
 
-:::{.v-center-container-on-slide style="height: 80vh;"}
+:::{.v-center-container-on-slide style="height: 1200px;"}
 ![](images/policy-server-architecture.excalidraw.png)
 :::
 
