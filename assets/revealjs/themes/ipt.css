@@ -459,6 +459,40 @@ div.columns {
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
+.reveal .warning blockquote {
+  background: rgb(from var(--r-color-primary-red) r g b / .2);
+  padding: 15px 15px 15px 3.5em;
+}
+
+.reveal .warning blockquote::before {
+  content: "\ea6c";
+  font-weight: 1200;
+  font-style: normal;
+  position: absolute;
+  font-size: 1.5em;
+  left: 1em;
+  top: 0.5em;
+  line-height: 1;
+  color: var(--r-color-primary-red);
+}
+
+.reveal .info blockquote {
+  background: rgb(from var(--r-color-primary-blue) r g b / .2);
+  padding: 15px 15px 15px 3.5em;
+}
+
+.reveal .info blockquote::before {
+  content: "\ea74";
+  font-weight: 1200;
+  font-style: normal;
+  position: absolute;
+  font-size: 1.5em;
+  left: 1em;
+  top: 0.5em;
+  line-height: 1;
+  color: var(--r-color-primary-blue);
+}
+
 .reveal blockquote p:first-child,
 .reveal blockquote p:last-child {
   display: inline-block;

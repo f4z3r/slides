@@ -140,3 +140,13 @@ This is a term
 
 This is another term
 : This is another definition
+
+# Warnings and Infos
+
+:::{.warning}
+> This is a warning that is evry long and will wrap across many lines and this and that will do yes.
+:::
+
+:::{.info}
+> This is an info
+:::
