@@ -277,6 +277,7 @@
 }
 
 .reveal dt {
+  margin-top: 40px;
   font-weight: bold;
   color: var(--r-color-text-red);
 }
@@ -289,6 +290,13 @@
 
 .reveal q {
   font-style: italic;
+}
+
+/*********************************************
+ * LAYOUT
+ *********************************************/
+div.columns {
+  width: 90%;
 }
 
 /*********************************************

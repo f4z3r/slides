@@ -132,3 +132,11 @@ def sample_function(name: str, arg: int):
 
   let c = planets.reduce( circumferenceReducer, 0 )
 </code></pre>
+
+# Definition Lists
+
+This is a term
+: This is a definition
+
+This is another term
+: This is another definition
