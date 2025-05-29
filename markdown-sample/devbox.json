@@ -3,7 +3,7 @@
   "packages": [
     "pandoc@3.1.11.1",
     "pandoc-imagine@0.1.6",
-    "miniserve@0.27.1",
+    "miniserve@0.28.0",
   ],
   "shell": {
     "scripts": {
