@@ -121,10 +121,17 @@
   text-shadow: var(--r-heading1-text-shadow);
 }
 
-.reveal p.author,
-.reveal p.subtitle {
-  color: var(--r-color-text-red);
+.reveal p.byline {
+  color: var(--r-color-primary-red) !important;
 }
+
+.reveal p.subtitle,
+.reveal p.author,
+.reveal p.institute,
+.reveal p.date {
+  color: var(--r-color-gray-blue);
+}
+
 
 .reveal p.institute,
 .reveal p.date {

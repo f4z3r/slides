@@ -13,8 +13,7 @@ progress: true
 controls: false
 hash: true
 highlightjs: true
-css:
-- style.css
+css: []
 animate: true
 history: false
 overview: true
@@ -273,7 +272,7 @@ spec:
 
 [https://github.com/iptch/kubewarden-demo](https://github.com/iptch/kubewarden-demo){.xx-large}
 
-# Verdict {.uppercase}
+## Verdict {.uppercase}
 
 ::::::{.columns style="padding-top: 15%"}
 :::{.column .boxed width=50%}
