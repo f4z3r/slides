@@ -12,11 +12,17 @@ speaker_note: |
   - increase font size 5 times with ctrl-+
 -->
 
+Preparation
+===
+
+```bash
+docker pull ghcr.io/f4z3r/vault-workshop:v0.0.4
+```
 
 Architecture
 ===
 
-![Architecture](./assets/img/architecture.png)
+![image:width:90%](./assets/img/architecture.png)
 
 Consul
 ===
@@ -34,8 +40,8 @@ Consul
 Leader Election: Raft
 ===
 
-![Raft](./assets/img/raft.gif)
-![Raft Initial Leader](./assets/img/raft-initial-leader.gif)
+![image:width:55%](./assets/img/raft.gif)
+![image:width:20%](./assets/img/raft-initial-leader.gif)
 
 <!-- alignment: center -->
 [Raft Demo](https://raft.github.io/)
