@@ -52,51 +52,51 @@
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "resolved": "github:NixOS/nixpkgs/de0fe301211c267807afd11b12613f5511ff7433?lastModified=1741310760&narHash=sha256-aizILFrPgq%2FW53Jw8i0a1h1GZAAKtlYOrG%2FA5r46gVM%3D"
     },
-    "presenterm@0.15.0": {
-      "last_modified": "2025-07-15T16:15:05Z",
-      "resolved": "github:NixOS/nixpkgs/dab3a6e781554f965bde3def0aa2fda4eb8f1708#presenterm",
+    "presenterm@0.15.1": {
+      "last_modified": "2025-08-04T03:33:26Z",
+      "resolved": "github:NixOS/nixpkgs/6a489c9482ca676ce23c0bcd7f2e1795383325fa#presenterm",
       "source": "devbox-search",
-      "version": "0.15.0",
+      "version": "0.15.1",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/g59zl7xxp86lm7r6yzxlzk5b4d5w7a3s-presenterm-0.15.0",
+              "path": "/nix/store/sx3mzfwgwwqbbkk44s1bn7i4kih6g6sq-presenterm-0.15.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/g59zl7xxp86lm7r6yzxlzk5b4d5w7a3s-presenterm-0.15.0"
+          "store_path": "/nix/store/sx3mzfwgwwqbbkk44s1bn7i4kih6g6sq-presenterm-0.15.1"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/bhhl02y9b1kfwxndp3jq58jr1jal269x-presenterm-0.15.0",
+              "path": "/nix/store/k5wdahjzh2gqkv1v44qxfjmmam3jhfw3-presenterm-0.15.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/bhhl02y9b1kfwxndp3jq58jr1jal269x-presenterm-0.15.0"
+          "store_path": "/nix/store/k5wdahjzh2gqkv1v44qxfjmmam3jhfw3-presenterm-0.15.1"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/0z2ypwqzpwajlambanqs9cai47h14c81-presenterm-0.15.0",
+              "path": "/nix/store/fbs353wisnncdr81fwihlaca90is93q9-presenterm-0.15.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/0z2ypwqzpwajlambanqs9cai47h14c81-presenterm-0.15.0"
+          "store_path": "/nix/store/fbs353wisnncdr81fwihlaca90is93q9-presenterm-0.15.1"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/fz82g6vj013ix2v1kwh0w5l86v5hac9f-presenterm-0.15.0",
+              "path": "/nix/store/ijx7jhvykb9i4rz55fcyhvsfsakpw054-presenterm-0.15.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/fz82g6vj013ix2v1kwh0w5l86v5hac9f-presenterm-0.15.0"
+          "store_path": "/nix/store/ijx7jhvykb9i4rz55fcyhvsfsakpw054-presenterm-0.15.1"
         }
       }
     },
