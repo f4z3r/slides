@@ -2,9 +2,9 @@
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.2/.schema/devbox.schema.json",
   "packages": [
     "python312Packages.presenterm-export@0.2.7",
-    "presenterm@0.15.0",
+    "presenterm@0.15.1",
     "kitty@0.42.2",
-    "vault-bin@1.20.0",
+    "vault-bin@1.20.1",
     "lolcat@100.0.1",
     "qrencode@4.1.1"
   ],
