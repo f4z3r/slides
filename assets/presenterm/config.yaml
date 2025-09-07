@@ -1,0 +1,31 @@
+defaults:
+  theme: gruvbox-dark
+  image_protocol: kitty-local
+  max_columns: 100
+  max_rows: 30
+
+typst:
+  ppi: 300
+
+mermaid:
+  scale: 2
+
+options:
+  incremental_lists: false
+  strict_front_matter_parsing: true
+  # required for speaker notes to properly work
+  implicit_slide_ends: false
+  end_slide_shorthand: false
+
+snippet:
+  exec:
+    enable: true
+
+transition:
+  duration_millis: 300
+  frames: 30
+  animation:
+    style: slide_horizontal
+
+speaker_notes:
+  always_publish: true

@@ -17,13 +17,13 @@
         "rm -rf ./assets/vault/raft/",
         "rm -f ./assets/vault/vault.db",
         "rm -f ./assets/vault/keys.json",
-        "presenterm --publish-speaker-notes -x slides.md"
+        "presenterm -xpP slides.md -c ../assets/presenterm/config.yaml"
       ],
       "create-qr": [
         "echo https://github.com/f4z3r/vault-workshop | qrencode -t utf8i | lolcat -f"
       ],
       "notes": [
-        "presenterm --listen-speaker-notes slides.md"
+        "presenterm -l slides.md"
       ]
     }
   }

@@ -4,20 +4,14 @@
     "python312Packages.presenterm-export@0.2.7",
     "presenterm@0.15.1",
     "kitty@0.42.2",
-    "vault-bin@1.20.1",
-    "lolcat@100.0.1",
-    "qrencode@4.1.1"
   ],
   "shell": {
     "scripts": {
-      "present": [
-        "rm -rf ./assets/vault/raft/",
-        "rm -f ./assets/vault/vault.db",
-        "rm -f ./assets/vault/keys.json",
-        "presenterm -xpP slides.md -c ../assets/presenterm/config.yaml"
+      "kitty": [
+        "KITTY_DISABLE_WAYLAND=1 kitty",
       ],
-      "create-qr": [
-        "echo https://github.com/f4z3r/vault-workshop | qrencode -t utf8i | lolcat -f"
+      "present": [
+        "presenterm -xpP slides.md -c ../assets/presenterm/config.yaml"
       ],
       "notes": [
         "presenterm -l slides.md"

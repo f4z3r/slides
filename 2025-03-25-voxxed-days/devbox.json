@@ -15,10 +15,10 @@
         "presenterm -e slides.md"
       ],
       "present": [
-        "presenterm --publish-speaker-notes slides.md"
+        "presenterm -xpP slides.md -c ../assets/presenterm/config.yaml"
       ],
       "notes": [
-        "presenterm --listen-speaker-notes slides.md"
+        "presenterm -l slides.md"
       ]
     }
   }
