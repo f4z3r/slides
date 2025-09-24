@@ -3,7 +3,7 @@
   "packages": [
     "python312Packages.presenterm-export@0.2.7",
     "presenterm@0.15.1",
-    "d2@0.7.0",
+    "d2@0.7.1",
   ],
   "shell": {
     "init_hook": [

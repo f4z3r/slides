@@ -4,51 +4,51 @@
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
       "resolved": "github:NixOS/nixpkgs/eaeed9530c76ce5f1d2d8232e08bec5e26f18ec1?lastModified=1747060738&narHash=sha256-ByfPRQuqj%2BnhtVV0koinEpmJw0KLzNbgcgi9EF%2BNVow%3D"
     },
-    "miniserve@0.31.0": {
-      "last_modified": "2025-07-15T16:15:05Z",
-      "resolved": "github:NixOS/nixpkgs/dab3a6e781554f965bde3def0aa2fda4eb8f1708#miniserve",
+    "miniserve@0.32.0": {
+      "last_modified": "2025-09-18T16:33:27Z",
+      "resolved": "github:NixOS/nixpkgs/f4b140d5b253f5e2a1ff4e5506edbf8267724bde#miniserve",
       "source": "devbox-search",
-      "version": "0.31.0",
+      "version": "0.32.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/1mdkdg2y9j35zf6dnj8ywadvx9j8034q-miniserve-0.31.0",
+              "path": "/nix/store/qws7sv4b3kcbn89xrf6wprl762z4j6yj-miniserve-0.32.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/1mdkdg2y9j35zf6dnj8ywadvx9j8034q-miniserve-0.31.0"
+          "store_path": "/nix/store/qws7sv4b3kcbn89xrf6wprl762z4j6yj-miniserve-0.32.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/m4wkisrnkmc79jhgfbzppmxrqy2k67va-miniserve-0.31.0",
+              "path": "/nix/store/qxz1dqza0agk6hg3ifkx1yg0y94qy7ks-miniserve-0.32.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/m4wkisrnkmc79jhgfbzppmxrqy2k67va-miniserve-0.31.0"
+          "store_path": "/nix/store/qxz1dqza0agk6hg3ifkx1yg0y94qy7ks-miniserve-0.32.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/0y72zpqdyp8whzgalppc34h742l4zs87-miniserve-0.31.0",
+              "path": "/nix/store/4p1fqw4jrdq8yf839b1981dszjrymrpm-miniserve-0.32.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/0y72zpqdyp8whzgalppc34h742l4zs87-miniserve-0.31.0"
+          "store_path": "/nix/store/4p1fqw4jrdq8yf839b1981dszjrymrpm-miniserve-0.32.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/43qzdkz9vqzbkz7901hmrja9gczarh1n-miniserve-0.31.0",
+              "path": "/nix/store/5wbmbhwi8cj1abmqd6xi740g6gc03hqh-miniserve-0.32.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/43qzdkz9vqzbkz7901hmrja9gczarh1n-miniserve-0.31.0"
+          "store_path": "/nix/store/5wbmbhwi8cj1abmqd6xi740g6gc03hqh-miniserve-0.32.0"
         }
       }
     },
