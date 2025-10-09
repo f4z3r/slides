@@ -25,6 +25,8 @@ Modular Monoliths
 speaker_note: |
   - De-couple modules
   - Cannot be deployed individually
+  - Typically require single language
+  - Shared state difficult to reason about
 -->
 
 <!-- end_slide -->
@@ -53,6 +55,7 @@ Kubernetes
 speaker_note: |
   - Largest ecosystem in the world
   - Automates close to everything around infrastructure
+  - Selling point mostly in the integrations
   - Maybe a short super high-level primer on Kubernetes?
 -->
 
@@ -90,15 +93,15 @@ speaker_note: |
 -->
 
 <!-- end_slide -->
-<!-- jump_to_middle -->
-<!-- font_size: 2 -->
-WebAssembly
-===
+<!-- newlines: 2 -->
+
+![image:width:90%](./assets/wasm.png)
 
 <!--
 speaker_note: |
-  - What is it?
   - Lightweight, secure runtime
+  - Deny by default
+  - Composable
 -->
 
 <!-- end_slide -->
@@ -114,17 +117,66 @@ speaker_note: |
   - Communication standardized and via wRPC
   - A way to split a modular monolith onto different hosts
   - Can be multi-lingual
-  - ...
+  - Still rely on REST for inter app communication
 -->
 
 <!-- end_slide -->
-TODO: slightly deeper dive into wasmCloud components
+wasmCloud
+===
+
+<!-- column_layout: [1, 1] -->
+<!-- column: 0 -->
+
+## Components
+
+- Business logic
+- KiB or MiB payloads
+- Launched when needed
+- Multi-lingual
+- Require capabilities
+
+## Links
+
+- Compose entities at runtime
+- Defined interfaces
+
+<!-- column: 1 -->
+
+## Capabilities
+
+- Abstract interfaces
+- Provide common functionality
+- Independent of implementation
+
+## Providers
+
+- Implementation of capability
+- Configurable
+- Partially builtin
+
+<!-- reset_layout -->
+
+<!--
+speaker_note: |
+-->
+
+<!-- end_slide -->
+<!-- jump_to_middle -->
+<!-- font_size: 3 -->
+Demo
 ===
 
 <!-- end_slide -->
-TODO: demo
+<!-- font_size: 3 -->
+Hands-On
 ===
 
-<!-- end_slide -->
-TODO: introduction to hands-on
-===
+<!-- jump_to_middle -->
+<!-- font_size: 2 -->
+<!-- alignment: center -->
+github.com/f4z3r/wasmcloud-tutorial
+
+<!--
+speaker_note: |
+  - Explain breaks etc
+-->
