@@ -23,10 +23,18 @@ Modular Monoliths
 
 <!--
 speaker_note: |
-  - De-couple modules
-  - Cannot be deployed individually
-  - Typically require single language
-  - Shared state difficult to reason about
+  - Complexity:
+      - High entry barrier: Large code base
+      - Single language: Usually one language for all functionalities
+      - Upgrades are high risk: tech debt (everything needs to be redeployed)
+  - Deployment:
+      - Big releases: No individual deployment -> full rebuild
+      - Large artifact: Extended downtime during deployment
+      - Slow cycles: Reduced iteration speed
+  - Operation:
+      - Shared state: Difficult debugging
+      - Tight coupling: High blast radius
+      - Inflexible scaling: Resource waste
 -->
 
 <!-- end_slide -->
