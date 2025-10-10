@@ -27,10 +27,12 @@ speaker_note: |
       - High entry barrier: Large code base
       - Single language: Usually one language for all functionalities
       - Upgrades are high risk: tech debt (everything needs to be redeployed)
+
   - Deployment:
       - Big releases: No individual deployment -> full rebuild
       - Large artifact: Extended downtime during deployment
       - Slow cycles: Reduced iteration speed
+
   - Operation:
       - Shared state: Difficult debugging
       - Tight coupling: High blast radius
@@ -108,7 +110,17 @@ Kubernetes Shortcomings
 
 <!--
 speaker_note: |
-  - ...
+- Compute Density:
+    - Containers repeat OS user space and waste resources
+    - Every service runs a Rest server for communication
+    - setting resource quotas (minimal quotas for service) is hard
+- Security:
+    - Attack Surface, More code (OS binaries) means more vulnerabilities to patch.
+    - Containers start with wide permissions, requiring manual hardening.
+- Complexity:
+    - AppDev needs knowledge of Linux and Kubernetes YAML just to ship code.
+    - No communication standard: Rest services are exposed everywhere to be accessible
+
   - Is there a better way?
 -->
 
