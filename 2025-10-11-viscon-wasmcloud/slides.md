@@ -61,10 +61,15 @@ Kubernetes
 
 <!--
 speaker_note: |
-  - Largest ecosystem in the world
-  - Automates close to everything around infrastructure
-  - Selling point mostly in the integrations
-  - Maybe a short super high-level primer on Kubernetes?
+  - Largest ecosystem in the world:
+    - K8s is a well established standard and a dominant abstraction layer.
+  - Core Concept:
+    - Orchestrating Containers and managing container lifecycle to ensure the cluster matches the declaratively defined state of your cluster.
+  - Benefits:
+    - Automates a lot around infrastructure (self-healing, scaling, etc)
+  - Prime usage for integrations:
+    - K8s is very extensible and benefits from a huge ecosystem (Prometheus, Grafana, etc..)
+
 -->
 
 <!-- end_slide -->
