@@ -45,12 +45,19 @@ Microservices
 
 <!--
 speaker_note: |
-  - Microservices
-  - Does not improve decoupling
-  - Independent deployment
-  - Every service owner of its data
-  - Communication via REST
-  - Complex deployment orchestration needed
+  - Autonomy:
+      + Independent deployment: Reduced blast radius and smaller release cycles
+      + Decentralized data: Each microservice is responsible for its own data
+      + Polyglot capabilities: Choose best language for the job
+      - Decoupling: Microservices need to closely agree on interfaces/permissions
+  - Operational Overhead:
+      - Complex deployment orchestration: Microservice deployment needs to be orchestrated
+      - Observability: Each microservice needs to be observed
+      - Networking focus (REST): Function calls happen over REST and introduced additional compexity (Load balancing, networking,...)
+  - Resource Inefficiency:
+      - Many idle loads: Rarely used microservices consume resources in idle
+      - Bloated artifacts: Every microservice contains the application runtime
+      - Complex deployment orchestration: Deployments need to be coordinated
 -->
 
 <!-- end_slide -->
