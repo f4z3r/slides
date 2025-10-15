@@ -3,7 +3,7 @@
   "packages": [
     "python312Packages.presenterm-export@0.2.7",
     "presenterm@0.15.1",
-    "kitty@0.42.2",
+    "kitty@0.43.1",
   ],
   "shell": {
     "scripts": {
