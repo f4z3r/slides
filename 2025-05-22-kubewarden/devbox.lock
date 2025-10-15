@@ -52,67 +52,67 @@
         }
       }
     },
-    "pandoc-imagine@0.1.6": {
-      "last_modified": "2025-05-06T08:06:31Z",
-      "resolved": "github:NixOS/nixpkgs/1cb1c02a6b1b7cf67e3d7731cbbf327a53da9679#pandoc-imagine",
+    "pandoc-imagine@0.1.7": {
+      "last_modified": "2025-10-07T08:41:47Z",
+      "resolved": "github:NixOS/nixpkgs/bce5fe2bb998488d8e7e7856315f90496723793c#pandoc-imagine",
       "source": "devbox-search",
-      "version": "0.1.6",
+      "version": "0.1.7",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/vfaha2sbxry7v09zyjgkg81m5n3ypgvy-pandoc-imagine-0.1.6",
+              "path": "/nix/store/vgfj13174jzbjni1gbcrqxg9vkd59lp1-pandoc-imagine-0.1.7",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/7ddjbycczihfbszhq43y39cqzfbmn5q0-pandoc-imagine-0.1.6-dist"
+              "path": "/nix/store/ffvlk1dvz2jycxssfhlgz5pg7jrdbaq6-pandoc-imagine-0.1.7-dist"
             }
           ],
-          "store_path": "/nix/store/vfaha2sbxry7v09zyjgkg81m5n3ypgvy-pandoc-imagine-0.1.6"
+          "store_path": "/nix/store/vgfj13174jzbjni1gbcrqxg9vkd59lp1-pandoc-imagine-0.1.7"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/21z0rn0hqpri56ri9yw0mvdiaxqyjj3l-pandoc-imagine-0.1.6",
+              "path": "/nix/store/xqiqbag3axrhv12k3xmsa9sjd3xc7fgb-pandoc-imagine-0.1.7",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/43dnsqab0dckxy92sali2r47kzfcr42j-pandoc-imagine-0.1.6-dist"
+              "path": "/nix/store/lgq6nyf1x9x4xjwkrshh2hxp7lkg5aj9-pandoc-imagine-0.1.7-dist"
             }
           ],
-          "store_path": "/nix/store/21z0rn0hqpri56ri9yw0mvdiaxqyjj3l-pandoc-imagine-0.1.6"
+          "store_path": "/nix/store/xqiqbag3axrhv12k3xmsa9sjd3xc7fgb-pandoc-imagine-0.1.7"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/m01z9nr22z9x0wvpgxpnjfd9n4299hf7-pandoc-imagine-0.1.6",
+              "path": "/nix/store/gvjbk05hpqcc0flkk5hj4bpi819z9x5n-pandoc-imagine-0.1.7",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/0zv0d7vf70f4zg7vx9jsyd4q6r1wa2al-pandoc-imagine-0.1.6-dist"
+              "path": "/nix/store/7h3gqrd14z6a6kx3b8d440i5w4yib47a-pandoc-imagine-0.1.7-dist"
             }
           ],
-          "store_path": "/nix/store/m01z9nr22z9x0wvpgxpnjfd9n4299hf7-pandoc-imagine-0.1.6"
+          "store_path": "/nix/store/gvjbk05hpqcc0flkk5hj4bpi819z9x5n-pandoc-imagine-0.1.7"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/ms45cds4i3phwzp3pfhddnra68nwk5cr-pandoc-imagine-0.1.6",
+              "path": "/nix/store/y7b0dyh84xc62npbjgbkld6db37q6qsp-pandoc-imagine-0.1.7",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/kwgyzbd3vw54cv53fxgc6anhl0pfld0z-pandoc-imagine-0.1.6-dist"
+              "path": "/nix/store/k8hkjr0ykw5pkcfhs2vbs1krvbpwdb3s-pandoc-imagine-0.1.7-dist"
             }
           ],
-          "store_path": "/nix/store/ms45cds4i3phwzp3pfhddnra68nwk5cr-pandoc-imagine-0.1.6"
+          "store_path": "/nix/store/y7b0dyh84xc62npbjgbkld6db37q6qsp-pandoc-imagine-0.1.7"
         }
       }
     },
