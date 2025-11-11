@@ -5,99 +5,99 @@
       "last_modified": "2025-05-20T08:00:33Z",
       "resolved": "github:NixOS/nixpkgs/2f9173bde1d3fbf1ad26ff6d52f952f9e9da52ea?lastModified=1747728033&narHash=sha256-NnXFQu7g4LnvPIPfJmBuZF7LFy%2Ffey2g2%2BLCzjQhTUk%3D"
     },
-    "kitty@0.43.1": {
-      "last_modified": "2025-10-08T10:03:27Z",
-      "resolved": "github:NixOS/nixpkgs/fb5cf53218b987f2703a5bbc292a030c0fe33443#kitty",
+    "kitty@0.44.0": {
+      "last_modified": "2025-11-07T02:32:13Z",
+      "resolved": "github:NixOS/nixpkgs/e1ebeec86b771e9d387dd02d82ffdc77ac753abc#kitty",
       "source": "devbox-search",
-      "version": "0.43.1",
+      "version": "0.44.0",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/iylhaki6573cpsvspivjfsim700n46r3-kitty-0.43.1",
+              "path": "/nix/store/ibwslpxbdgyy3z1zl3375nm2zqiw4yhf-kitty-0.44.0",
               "default": true
             },
             {
               "name": "kitten",
-              "path": "/nix/store/qca6ld17hdwqq7hn0da41xl3m3j0hbnz-kitty-0.43.1-kitten"
+              "path": "/nix/store/rv1cdzr6077lm4klrnpifq783iknwjia-kitty-0.44.0-kitten"
             },
             {
               "name": "shell_integration",
-              "path": "/nix/store/46xgsvpfb6d90snfkh5c9ygnhwpmbxka-kitty-0.43.1-shell_integration"
+              "path": "/nix/store/49p0q9p2rx0zzq16lfs38r0lp2p0zhcg-kitty-0.44.0-shell_integration"
             },
             {
               "name": "terminfo",
-              "path": "/nix/store/k5c8pi2sfycps2ig2z4flh0yr95f79s6-kitty-0.43.1-terminfo"
+              "path": "/nix/store/mxzzxb475k2mpcm3q1787ni48cl7a6rl-kitty-0.44.0-terminfo"
             }
           ],
-          "store_path": "/nix/store/iylhaki6573cpsvspivjfsim700n46r3-kitty-0.43.1"
+          "store_path": "/nix/store/ibwslpxbdgyy3z1zl3375nm2zqiw4yhf-kitty-0.44.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/21i3mz096fw4cri65x8wainqj7wp6lhs-kitty-0.43.1",
+              "path": "/nix/store/xh7sk0vks4vk3qxznw17ak3xzs7b1ar1-kitty-0.44.0",
               "default": true
             },
             {
+              "name": "terminfo",
+              "path": "/nix/store/yz0syyph11qnp25krzmkf4jp4hwmqqlc-kitty-0.44.0-terminfo"
+            },
+            {
               "name": "kitten",
-              "path": "/nix/store/220nbwhl5ld2vj4p3qsfyk5kxqxf6ah1-kitty-0.43.1-kitten"
+              "path": "/nix/store/xkm4mfm0jgdg9b4338dwja8j64xvbbif-kitty-0.44.0-kitten"
             },
             {
               "name": "shell_integration",
-              "path": "/nix/store/d4ggqljq9ldv7dapv2sh6whwvx8dm713-kitty-0.43.1-shell_integration"
-            },
-            {
-              "name": "terminfo",
-              "path": "/nix/store/maci1rxjnwsq6kyhbm9nkqfjngmamia6-kitty-0.43.1-terminfo"
+              "path": "/nix/store/6w5k9q2dc9rlgi6yap9ckg9x9wg18w9x-kitty-0.44.0-shell_integration"
             }
           ],
-          "store_path": "/nix/store/21i3mz096fw4cri65x8wainqj7wp6lhs-kitty-0.43.1"
+          "store_path": "/nix/store/xh7sk0vks4vk3qxznw17ak3xzs7b1ar1-kitty-0.44.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/byiw7wpkc0cr17y87w0mqrl5i66ljcnj-kitty-0.43.1",
+              "path": "/nix/store/rjcyfdc9nql2fl6vqdcyz0v8b8880dgw-kitty-0.44.0",
               "default": true
             },
             {
               "name": "terminfo",
-              "path": "/nix/store/q1x6zk6nkw6rjn6klblcybba3gprk04i-kitty-0.43.1-terminfo"
+              "path": "/nix/store/q1a28rnypxfczz6d93zzysrhzhalyz7z-kitty-0.44.0-terminfo"
             },
             {
               "name": "kitten",
-              "path": "/nix/store/nnb86yqf80a174axv4dhx1y6h6srh9la-kitty-0.43.1-kitten"
+              "path": "/nix/store/y7b299cqi2gi97nxk048vxv17fd46vq1-kitty-0.44.0-kitten"
             },
             {
               "name": "shell_integration",
-              "path": "/nix/store/1wahfh11in6py7sgcxpw06yk9fw6m90p-kitty-0.43.1-shell_integration"
+              "path": "/nix/store/g51ldhrh4i8qfjw3yy3zfcncr0a1vik2-kitty-0.44.0-shell_integration"
             }
           ],
-          "store_path": "/nix/store/byiw7wpkc0cr17y87w0mqrl5i66ljcnj-kitty-0.43.1"
+          "store_path": "/nix/store/rjcyfdc9nql2fl6vqdcyz0v8b8880dgw-kitty-0.44.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/1yz7j9mv8blq01v2jwx3xyr57pw1khx6-kitty-0.43.1",
+              "path": "/nix/store/g10lvfcphiljyhnzk2h5nb5cn2kibz5h-kitty-0.44.0",
               "default": true
             },
             {
               "name": "kitten",
-              "path": "/nix/store/4152z3rgvim54wii5713bi8g8f9kgwsz-kitty-0.43.1-kitten"
+              "path": "/nix/store/yb2qpn99wlpwh2k1m6b62hfjhxqa0802-kitty-0.44.0-kitten"
             },
             {
               "name": "shell_integration",
-              "path": "/nix/store/r7a8326d4jxih4g5hma9vh8296gqj0sa-kitty-0.43.1-shell_integration"
+              "path": "/nix/store/hn7wsax4j1pmj3zh10hd9b7k5nndcxiv-kitty-0.44.0-shell_integration"
             },
             {
               "name": "terminfo",
-              "path": "/nix/store/bpqnxvyi5q6b5s36yad3awracyl271s7-kitty-0.43.1-terminfo"
+              "path": "/nix/store/kj0kc7cq0n32dv2lq9mb5cp7pqqad3d9-kitty-0.44.0-terminfo"
             }
           ],
-          "store_path": "/nix/store/1yz7j9mv8blq01v2jwx3xyr57pw1khx6-kitty-0.43.1"
+          "store_path": "/nix/store/g10lvfcphiljyhnzk2h5nb5cn2kibz5h-kitty-0.44.0"
         }
       }
     },
