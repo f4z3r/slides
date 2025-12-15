@@ -361,51 +361,51 @@
         }
       }
     },
-    "vault-bin@1.20.4": {
-      "last_modified": "2025-10-07T08:41:47Z",
-      "resolved": "github:NixOS/nixpkgs/bce5fe2bb998488d8e7e7856315f90496723793c#vault-bin",
+    "vault-bin@1.21.1": {
+      "last_modified": "2025-12-13T16:46:16Z",
+      "resolved": "github:NixOS/nixpkgs/23735a82a828372c4ef92c660864e82fbe2f5fbe#vault-bin",
       "source": "devbox-search",
-      "version": "1.20.4",
+      "version": "1.21.1",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/l3nlw945m42va0cckaffp2skfbmj7zpf-vault-bin-1.20.4",
+              "path": "/nix/store/s5gdgimv4xj7qz9yxrvvv6hg6ivvh8xx-vault-bin-1.21.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/l3nlw945m42va0cckaffp2skfbmj7zpf-vault-bin-1.20.4"
+          "store_path": "/nix/store/s5gdgimv4xj7qz9yxrvvv6hg6ivvh8xx-vault-bin-1.21.1"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/srdl9rx2q0rjw7mna1wrbw6b31jspdvg-vault-bin-1.20.4",
+              "path": "/nix/store/gb361x1w1vz3c6kb83mgvp9c1ikzdl5k-vault-bin-1.21.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/srdl9rx2q0rjw7mna1wrbw6b31jspdvg-vault-bin-1.20.4"
+          "store_path": "/nix/store/gb361x1w1vz3c6kb83mgvp9c1ikzdl5k-vault-bin-1.21.1"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/jp99wmp8z7v5lnmjh62kyis9grh3p19a-vault-bin-1.20.4",
+              "path": "/nix/store/7qwj9l29z5jx2d4hzxh9ip2h4pfc26g0-vault-bin-1.21.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/jp99wmp8z7v5lnmjh62kyis9grh3p19a-vault-bin-1.20.4"
+          "store_path": "/nix/store/7qwj9l29z5jx2d4hzxh9ip2h4pfc26g0-vault-bin-1.21.1"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/rmsykh5zzmr2xcqkmfdx162qpzg6qjkr-vault-bin-1.20.4",
+              "path": "/nix/store/mhlx5n4097s9ak407di092ngjxj56f2g-vault-bin-1.21.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/rmsykh5zzmr2xcqkmfdx162qpzg6qjkr-vault-bin-1.20.4"
+          "store_path": "/nix/store/mhlx5n4097s9ak407di092ngjxj56f2g-vault-bin-1.21.1"
         }
       }
     }
