@@ -149,51 +149,51 @@
         }
       }
     },
-    "presenterm@0.15.1": {
-      "last_modified": "2025-08-04T03:33:26Z",
-      "resolved": "github:NixOS/nixpkgs/6a489c9482ca676ce23c0bcd7f2e1795383325fa#presenterm",
+    "presenterm@0.16.1": {
+      "last_modified": "2026-02-23T15:40:43Z",
+      "resolved": "github:NixOS/nixpkgs/80d901ec0377e19ac3f7bb8c035201e2e098cc97#presenterm",
       "source": "devbox-search",
-      "version": "0.15.1",
+      "version": "0.16.1",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/sx3mzfwgwwqbbkk44s1bn7i4kih6g6sq-presenterm-0.15.1",
+              "path": "/nix/store/c27fw668g6jlvsdbidr1pl409clyavap-presenterm-0.16.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/sx3mzfwgwwqbbkk44s1bn7i4kih6g6sq-presenterm-0.15.1"
+          "store_path": "/nix/store/c27fw668g6jlvsdbidr1pl409clyavap-presenterm-0.16.1"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/k5wdahjzh2gqkv1v44qxfjmmam3jhfw3-presenterm-0.15.1",
+              "path": "/nix/store/m3jx6sni6r06hb62dfrym4hg4g8bffrq-presenterm-0.16.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/k5wdahjzh2gqkv1v44qxfjmmam3jhfw3-presenterm-0.15.1"
+          "store_path": "/nix/store/m3jx6sni6r06hb62dfrym4hg4g8bffrq-presenterm-0.16.1"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/fbs353wisnncdr81fwihlaca90is93q9-presenterm-0.15.1",
+              "path": "/nix/store/gvva958xj5h8h4yjgr6wd6r8y59fwpky-presenterm-0.16.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/fbs353wisnncdr81fwihlaca90is93q9-presenterm-0.15.1"
+          "store_path": "/nix/store/gvva958xj5h8h4yjgr6wd6r8y59fwpky-presenterm-0.16.1"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/ijx7jhvykb9i4rz55fcyhvsfsakpw054-presenterm-0.15.1",
+              "path": "/nix/store/006fq685wc2zmxnz1v0qfg8ixlzn65mz-presenterm-0.16.1",
               "default": true
             }
           ],
-          "store_path": "/nix/store/ijx7jhvykb9i4rz55fcyhvsfsakpw054-presenterm-0.15.1"
+          "store_path": "/nix/store/006fq685wc2zmxnz1v0qfg8ixlzn65mz-presenterm-0.16.1"
         }
       }
     },
