@@ -5,77 +5,77 @@
       "last_modified": "2026-03-28T12:40:58Z",
       "resolved": "github:NixOS/nixpkgs/b63fe7f000adcfa269967eeff72c64cafecbbebe?lastModified=1774701658&narHash=sha256-CIS%2F4AMUSwUyC8X5g%2B5JsMRvIUL3YUfewe8K4VrbsSQ%3D"
     },
-    "kitty@0.48.0": {
-      "last_modified": "2026-07-23T05:10:05Z",
-      "resolved": "github:NixOS/nixpkgs/7525d999cd850b9a488817abc89c75dc733acf17#kitty",
+    "kitty@0.48.2": {
+      "last_modified": "2026-08-01T16:34:20Z",
+      "resolved": "github:NixOS/nixpkgs/a5cbcfe954791221bfffe2307f7d1a1bf61a871e#kitty",
       "source": "devbox-search",
-      "version": "0.48.0",
+      "version": "0.48.2",
       "systems": {
         "aarch64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/0yb51prqq79zb1igmbwcbs40fzad7c6v-kitty-0.48.0",
+              "path": "/nix/store/xm6l2iywgh8js10q0yjd4hl7yyj7mkpw-kitty-0.48.2",
               "default": true
             },
             {
               "name": "kitten",
-              "path": "/nix/store/nnq6jfz6rckhmxcdi02np0c3n5ps9l2a-kitty-0.48.0-kitten"
+              "path": "/nix/store/a0dd55cpkjs3p9aj9cx35ml6z5w4ww6v-kitty-0.48.2-kitten"
             },
             {
               "name": "shell_integration",
-              "path": "/nix/store/kar0jan36h3n5fvk03rbpmqna387z3gj-kitty-0.48.0-shell_integration"
+              "path": "/nix/store/kap3bmhcp93cqgqsjpl207ksxhv12728-kitty-0.48.2-shell_integration"
             },
             {
               "name": "terminfo",
-              "path": "/nix/store/0vis7l9d5vq5121qsp0c3769x45iscwk-kitty-0.48.0-terminfo"
+              "path": "/nix/store/n1lmgg97d3l0f3dr8ackw09a3mssns5v-kitty-0.48.2-terminfo"
             }
           ],
-          "store_path": "/nix/store/0yb51prqq79zb1igmbwcbs40fzad7c6v-kitty-0.48.0"
+          "store_path": "/nix/store/xm6l2iywgh8js10q0yjd4hl7yyj7mkpw-kitty-0.48.2"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/mrsj9d2ia7cwyhq5lv83pj025sns9cln-kitty-0.48.0",
+              "path": "/nix/store/j506l59n0s2bzgwrlc954i6qw6vdiiwh-kitty-0.48.2",
               "default": true
             },
             {
+              "name": "terminfo",
+              "path": "/nix/store/nkvih5d9xj32y07jqmm44xm49bw9z6bd-kitty-0.48.2-terminfo"
+            },
+            {
               "name": "kitten",
-              "path": "/nix/store/y1svb5gs5k2g4v8iii8qwppzzb0hccw1-kitty-0.48.0-kitten"
+              "path": "/nix/store/2vqrgpmddnshx50x3yzwb522xgizhlga-kitty-0.48.2-kitten"
             },
             {
               "name": "shell_integration",
-              "path": "/nix/store/s6bqqp1r203scwsmvqbcc5kjpnfbdfyl-kitty-0.48.0-shell_integration"
-            },
-            {
-              "name": "terminfo",
-              "path": "/nix/store/iz738mnzz32m5n7vy7fj1kk58724gqfa-kitty-0.48.0-terminfo"
+              "path": "/nix/store/jqr9w3mz73ij2sz47w9v8azgqg1r47v1-kitty-0.48.2-shell_integration"
             }
           ],
-          "store_path": "/nix/store/mrsj9d2ia7cwyhq5lv83pj025sns9cln-kitty-0.48.0"
+          "store_path": "/nix/store/j506l59n0s2bzgwrlc954i6qw6vdiiwh-kitty-0.48.2"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/5qllds9rvyicjspixbzaaz9dvglbq6bd-kitty-0.48.0",
+              "path": "/nix/store/myprk5hqplf1hc0cj8mv7chbnpb7gini-kitty-0.48.2",
               "default": true
             },
             {
-              "name": "kitten",
-              "path": "/nix/store/d0xq4ip14g9qljipbrmnri8k7jh4pv07-kitty-0.48.0-kitten"
-            },
-            {
               "name": "shell_integration",
-              "path": "/nix/store/w5g8yprly2bnsm6w81j1mm4cfz0zpgas-kitty-0.48.0-shell_integration"
+              "path": "/nix/store/n9cbsvha30nz99y2z7qavwqwh7r151vp-kitty-0.48.2-shell_integration"
             },
             {
               "name": "terminfo",
-              "path": "/nix/store/4194sjiqizgiyaczllvj1dd91kfqpgwk-kitty-0.48.0-terminfo"
+              "path": "/nix/store/ffm8z80741wzdxhriba4b35r3l2s711q-kitty-0.48.2-terminfo"
+            },
+            {
+              "name": "kitten",
+              "path": "/nix/store/mmwfnv4ar3bsls8wizhfcxpb3ysc3ajq-kitty-0.48.2-kitten"
             }
           ],
-          "store_path": "/nix/store/5qllds9rvyicjspixbzaaz9dvglbq6bd-kitty-0.48.0"
+          "store_path": "/nix/store/myprk5hqplf1hc0cj8mv7chbnpb7gini-kitty-0.48.2"
         }
       }
     },
