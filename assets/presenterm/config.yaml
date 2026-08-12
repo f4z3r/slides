@@ -1,6 +1,6 @@
 defaults:
   theme: gruvbox-dark
-  image_protocol: kitty-local
+  # image_protocol: kitty-local
   max_columns: 100
   max_rows: 30
 

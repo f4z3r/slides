@@ -1,0 +1,7 @@
+[tools]
+"aqua:mfontanini/presenterm" = "0.16.1"
+
+[tasks.present]
+description = "Present some slides"
+run = "presenterm -xpP -c assets/presenterm/config.yaml"
+alias = "p"

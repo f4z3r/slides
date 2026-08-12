@@ -17,6 +17,7 @@ slide_title:
 
 code:
   alignment: center
+  line_numbers: true
   minimum_size: 50
   minimum_margin:
     percent: 8
@@ -77,29 +78,38 @@ intro_slide:
 
 headings:
   h1:
-    prefix: "██"
-    colors:
-      foreground: "8ec07c"
-  h2:
     prefix: "▓▓▓"
     colors:
-      foreground: "d3869b"
-  h3:
+      foreground: "8ec07c"
+    bold: true
+  h2:
     prefix: "▒▒▒▒"
     colors:
+      foreground: "d3869b"
+    bold: true
+  h3:
+    prefix: ""
+    colors:
       foreground: "83a598"
+    bold: true
   h4:
-    prefix: "░░░░░"
+    prefix: "󰪥"
     colors:
       foreground: "fb4934"
+    underlined: true
+    bold: true
   h5:
-    prefix: "░░░░░░"
-    colors:
-      foreground: "b8bb26"
-  h6:
-    prefix: "░░░░░░░"
+    prefix: "󰺕"
     colors:
       foreground: "fe8019"
+    underlined: true
+    bold: true
+  h6:
+    prefix: "○"
+    colors:
+      foreground: "b8bb26"
+    underlined: true
+    bold: true
 
 block_quote:
   prefix: "▍ "
