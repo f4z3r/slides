@@ -5,9 +5,9 @@ version = "0.16.1"
 backend = "aqua:mfontanini/presenterm"
 
 [tools."aqua:mfontanini/presenterm"."platforms.linux-arm64"]
-checksum = "sha256:c03c3744609d61587aac9dda4f431912748bd70d88d4fa6c0440b079001c64c3"
-url = "https://github.com/mfontanini/presenterm/releases/download/v0.16.1/presenterm-0.16.1-aarch64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/mfontanini/presenterm/releases/assets/358918301"
+checksum = "sha256:d08cac84c26f2c683ae34458e8be497575ef92af9bca5bfbe8e01a97742eadd9"
+url = "https://github.com/mfontanini/presenterm/releases/download/v0.16.1/presenterm-0.16.1-aarch64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/mfontanini/presenterm/releases/assets/358918269"
 
 [tools."aqua:mfontanini/presenterm"."platforms.linux-arm64-musl"]
 checksum = "sha256:c03c3744609d61587aac9dda4f431912748bd70d88d4fa6c0440b079001c64c3"
@@ -15,9 +15,9 @@ url = "https://github.com/mfontanini/presenterm/releases/download/v0.16.1/presen
 url_api = "https://api.github.com/repos/mfontanini/presenterm/releases/assets/358918301"
 
 [tools."aqua:mfontanini/presenterm"."platforms.linux-x64"]
-checksum = "sha256:87512d7c88c3d961c7687aca3519f83c2b7611a550cf769c67c6f7948e8b8f54"
-url = "https://github.com/mfontanini/presenterm/releases/download/v0.16.1/presenterm-0.16.1-x86_64-unknown-linux-musl.tar.gz"
-url_api = "https://api.github.com/repos/mfontanini/presenterm/releases/assets/358918116"
+checksum = "sha256:01fbe92c16d76e84ad9baa10c32ae6ed020a514bf72bd3980a1218250a292b14"
+url = "https://github.com/mfontanini/presenterm/releases/download/v0.16.1/presenterm-0.16.1-x86_64-unknown-linux-gnu.tar.gz"
+url_api = "https://api.github.com/repos/mfontanini/presenterm/releases/assets/358917905"
 
 [tools."aqua:mfontanini/presenterm"."platforms.linux-x64-musl"]
 checksum = "sha256:87512d7c88c3d961c7687aca3519f83c2b7611a550cf769c67c6f7948e8b8f54"

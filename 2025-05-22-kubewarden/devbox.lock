@@ -2,12 +2,12 @@
   "lockfile_version": "1",
   "packages": {
     "github:NixOS/nixpkgs/nixpkgs-unstable": {
-      "last_modified": "2026-03-28T12:40:58Z",
-      "resolved": "github:NixOS/nixpkgs/b63fe7f000adcfa269967eeff72c64cafecbbebe?lastModified=1774701658&narHash=sha256-CIS%2F4AMUSwUyC8X5g%2B5JsMRvIUL3YUfewe8K4VrbsSQ%3D"
+      "last_modified": "2026-09-06T09:21:42Z",
+      "resolved": "github:NixOS/nixpkgs/94a0f8d9ca5da101ec1cddbdfecfdc1ae1766d04?lastModified=1788686502&narHash=sha256-C5ETRqK0ji2SGGVpjdsAIv%2BYd6m4vB6DOiGPQXP%2FM34%3D"
     },
     "miniserve@0.35.0": {
-      "last_modified": "2026-04-09T11:02:51Z",
-      "resolved": "github:NixOS/nixpkgs/02f3fa0374fa13707d42d55d58ecc76b091f223c#miniserve",
+      "last_modified": "2026-08-27T07:16:00Z",
+      "resolved": "github:NixOS/nixpkgs/c27cdad491a991b11ed731760aa2ef8db0cb0410#miniserve",
       "source": "devbox-search",
       "version": "0.35.0",
       "systems": {
@@ -15,47 +15,47 @@
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/rxyrv58gg8a0yv5400v5b1x0ylfkcsbg-miniserve-0.35.0",
+              "path": "/nix/store/9yawqswdx0jf2yd266pszd79sj1l4bpk-miniserve-0.35.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/rxyrv58gg8a0yv5400v5b1x0ylfkcsbg-miniserve-0.35.0"
+          "store_path": "/nix/store/9yawqswdx0jf2yd266pszd79sj1l4bpk-miniserve-0.35.0"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/dsilmfrcxmdz3mnhic7agjm91l0kagxc-miniserve-0.35.0",
+              "path": "/nix/store/jarrkbkhr9186vxqfkh1gpd3jrfi1bgv-miniserve-0.35.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/dsilmfrcxmdz3mnhic7agjm91l0kagxc-miniserve-0.35.0"
+          "store_path": "/nix/store/jarrkbkhr9186vxqfkh1gpd3jrfi1bgv-miniserve-0.35.0"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/191r78h4a8zv7szmz1k3xn5ijigamlbx-miniserve-0.35.0",
+              "path": "/nix/store/vi6swck39xczzf6rdkm7ympnsz6mhrnn-miniserve-0.35.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/191r78h4a8zv7szmz1k3xn5ijigamlbx-miniserve-0.35.0"
+          "store_path": "/nix/store/vi6swck39xczzf6rdkm7ympnsz6mhrnn-miniserve-0.35.0"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/45ppmhhci3pkp6vjx67yshz00b6xww6j-miniserve-0.35.0",
+              "path": "/nix/store/29v0ak50dq39hdv8ad3nq6s8vyc0rdsl-miniserve-0.35.0",
               "default": true
             }
           ],
-          "store_path": "/nix/store/45ppmhhci3pkp6vjx67yshz00b6xww6j-miniserve-0.35.0"
+          "store_path": "/nix/store/29v0ak50dq39hdv8ad3nq6s8vyc0rdsl-miniserve-0.35.0"
         }
       }
     },
     "pandoc-imagine@0.1.7": {
-      "last_modified": "2026-03-21T07:29:51Z",
-      "resolved": "github:NixOS/nixpkgs/09061f748ee21f68a089cd5d91ec1859cd93d0be#pandoc-imagine",
+      "last_modified": "2026-08-27T07:16:00Z",
+      "resolved": "github:NixOS/nixpkgs/c27cdad491a991b11ed731760aa2ef8db0cb0410#pandoc-imagine",
       "source": "devbox-search",
       "version": "0.1.7",
       "systems": {
@@ -63,57 +63,57 @@
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/810nml3m9w2hipk9aaddwsrmlf0ca578-pandoc-imagine-0.1.7",
+              "path": "/nix/store/4zga0k7fd396wv7bdx2x5id5pd1py0ba-pandoc-imagine-0.1.7",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/w5jqh18shxrz9b49znh29rm8xyrc6v59-pandoc-imagine-0.1.7-dist"
+              "path": "/nix/store/qbznph9473pyyhjazkfyhz2wkm9y7y9b-pandoc-imagine-0.1.7-dist"
             }
           ],
-          "store_path": "/nix/store/810nml3m9w2hipk9aaddwsrmlf0ca578-pandoc-imagine-0.1.7"
+          "store_path": "/nix/store/4zga0k7fd396wv7bdx2x5id5pd1py0ba-pandoc-imagine-0.1.7"
         },
         "aarch64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/nik071ihr21mg5i18qw2g90wf2cwljr6-pandoc-imagine-0.1.7",
+              "path": "/nix/store/z8zxlzwqjrjpynabppdsb2lygh077dpw-pandoc-imagine-0.1.7",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/4aivg447461km6r9jrjk55jq8kcigyqz-pandoc-imagine-0.1.7-dist"
+              "path": "/nix/store/7cy12fk3fg460ylhsa2knnpg7n31d2p4-pandoc-imagine-0.1.7-dist"
             }
           ],
-          "store_path": "/nix/store/nik071ihr21mg5i18qw2g90wf2cwljr6-pandoc-imagine-0.1.7"
+          "store_path": "/nix/store/z8zxlzwqjrjpynabppdsb2lygh077dpw-pandoc-imagine-0.1.7"
         },
         "x86_64-darwin": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/airz0j3y2dkf667hij0fj7vpg89w1rfm-pandoc-imagine-0.1.7",
+              "path": "/nix/store/sr8v2fk3z3jrff47ara81v9x7ck0qld6-pandoc-imagine-0.1.7",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/rgj7pmxy0kgrvx5bfbfnfqkrgf8a4ipa-pandoc-imagine-0.1.7-dist"
+              "path": "/nix/store/iswhgzy8fxf2a61p63d6iirwp8kqlq49-pandoc-imagine-0.1.7-dist"
             }
           ],
-          "store_path": "/nix/store/airz0j3y2dkf667hij0fj7vpg89w1rfm-pandoc-imagine-0.1.7"
+          "store_path": "/nix/store/sr8v2fk3z3jrff47ara81v9x7ck0qld6-pandoc-imagine-0.1.7"
         },
         "x86_64-linux": {
           "outputs": [
             {
               "name": "out",
-              "path": "/nix/store/5cz93nqgzk5wfs63r99a05yv8xqhypff-pandoc-imagine-0.1.7",
+              "path": "/nix/store/z2rsqgrxkl96j0q51xjfvhwd93cmg6vj-pandoc-imagine-0.1.7",
               "default": true
             },
             {
               "name": "dist",
-              "path": "/nix/store/ks3z84dmyh1faks53li28h3kzfb9fnax-pandoc-imagine-0.1.7-dist"
+              "path": "/nix/store/fnqcc4xf1rb4pm9hyfflcwpxm5qdilrc-pandoc-imagine-0.1.7-dist"
             }
           ],
-          "store_path": "/nix/store/5cz93nqgzk5wfs63r99a05yv8xqhypff-pandoc-imagine-0.1.7"
+          "store_path": "/nix/store/z2rsqgrxkl96j0q51xjfvhwd93cmg6vj-pandoc-imagine-0.1.7"
         }
       }
     },
